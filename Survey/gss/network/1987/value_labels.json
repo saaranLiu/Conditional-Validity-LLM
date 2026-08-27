@@ -1,0 +1,303 @@
+{
+  "ego": {
+    "id": {
+      "label": "respondent id number"
+    },
+    "year": {
+      "label": "gss year for this respondent"
+    },
+    "age": {
+      "label": "age of respondent",
+      "values": {
+        "89": "89 or older"
+      }
+    },
+    "sex": {
+      "label": "respondents sex",
+      "values": {
+        "1": "male",
+        "2": "female"
+      }
+    },
+    "race": {
+      "label": "race of respondent",
+      "values": {
+        "1": "white",
+        "2": "black",
+        "3": "other"
+      }
+    },
+    "educ": {
+      "label": "highest year of school completed",
+      "values": {
+        "0": "no formal schooling",
+        "1": "1st grade",
+        "2": "2nd grade",
+        "3": "3rd grade",
+        "4": "4th grade",
+        "5": "5th grade",
+        "6": "6th grade",
+        "7": "7th grade",
+        "8": "8th grade",
+        "9": "9th grade",
+        "10": "10th grade",
+        "11": "11th grade",
+        "12": "12th grade",
+        "13": "1 year of college",
+        "14": "2 years of college",
+        "15": "3 years of college",
+        "16": "4 years of college",
+        "17": "5 years of college",
+        "18": "6 years of college",
+        "19": "7 years of college",
+        "20": "8 or more years of college"
+      }
+    },
+    "degree": {
+      "label": "r's highest degree",
+      "values": {
+        "0": "less than high school",
+        "1": "high school",
+        "2": "associate/junior college",
+        "3": "bachelor's",
+        "4": "graduate"
+      }
+    },
+    "marital": {
+      "label": "marital status",
+      "values": {
+        "1": "married",
+        "2": "widowed",
+        "3": "divorced",
+        "4": "separated",
+        "5": "never married"
+      }
+    },
+    "relig": {
+      "label": "r's religious preference",
+      "values": {
+        "1": "protestant",
+        "2": "catholic",
+        "3": "jewish",
+        "4": "none",
+        "5": "other",
+        "6": "buddhism",
+        "7": "hinduism",
+        "8": "other eastern religions",
+        "9": "muslim/islam",
+        "10": "orthodox-christian",
+        "11": "christian",
+        "12": "native american",
+        "13": "inter-nondenominational"
+      }
+    },
+    "partyid": {
+      "label": "political party affiliation",
+      "values": {
+        "0": "strong democrat",
+        "1": "not very strong democrat",
+        "2": "independent, close to democrat",
+        "3": "independent (neither, no response)",
+        "4": "independent, close to republican",
+        "5": "not very strong republican",
+        "6": "strong republican",
+        "7": "other party"
+      }
+    },
+    "region": {
+      "label": "region of interview",
+      "values": {
+        "1": "northeast",
+        "2": "midwest",
+        "3": "south",
+        "4": "west"
+      }
+    },
+    "happy": {
+      "label": "general happiness",
+      "values": {
+        "1": "very happy",
+        "2": "pretty happy",
+        "3": "not too happy"
+      }
+    },
+    "health": {
+      "label": "condition of health",
+      "values": {
+        "1": "excellent",
+        "2": "good",
+        "3": "fair",
+        "4": "poor"
+      }
+    },
+    "numgiven": {
+      "label": "number of persons mentioned",
+      "values": {
+        "0": "0",
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6 or more"
+      }
+    },
+    "wtssall": {
+      "label": "weight variable"
+    },
+    "vpsu": {
+      "label": "variance primary sampling unit"
+    },
+    "vstrat": {
+      "label": "variance stratum"
+    },
+    "form": {
+      "label": "form of split questionnaire asked",
+      "values": {
+        "1": "standard <x>",
+        "2": "alternate <y>",
+        "3": "alternate <z>"
+      }
+    },
+    "eqclose": {
+      "label": "r feels equally close to all persons",
+      "values": {
+        "1": "yes",
+        "2": "no",
+        "7": "refused"
+      }
+    },
+    "in_network_module": {
+      "label": "respondent entered ego-network module (derived)",
+      "values": {
+        "TRUE": "yes",
+        "FALSE": "no"
+      }
+    },
+    "has_alters": {
+      "label": "respondent named at least one alter (derived)",
+      "values": {
+        "TRUE": "yes",
+        "FALSE": "no"
+      }
+    },
+    "numgiven_is_topcoded": {
+      "label": "numgiven is top-coded at 6+ (derived)",
+      "values": {
+        "TRUE": "yes",
+        "FALSE": "no"
+      }
+    }
+  },
+  "alter": {
+    "ego_id": {
+      "label": "ego identifier ({year}_{id})"
+    },
+    "alter_id": {
+      "label": "alter nomination rank within ego (1..max_alters)"
+    },
+    "spouse": {
+      "label": "person #n is r's spouse",
+      "values": {
+        "1": "mentioned",
+        "2": "not mentioned"
+      }
+    },
+    "parent": {
+      "label": "person #n is r's parent",
+      "values": {
+        "1": "mentioned",
+        "2": "not mentioned"
+      }
+    },
+    "sibling": {
+      "label": "person #n is r's sibling",
+      "values": {
+        "1": "mentioned",
+        "2": "not mentioned"
+      }
+    },
+    "child": {
+      "label": "person #n is r's child",
+      "values": {
+        "1": "mentioned",
+        "2": "not mentioned"
+      }
+    },
+    "othfam": {
+      "label": "person #n is r's family member",
+      "values": {
+        "1": "mentioned",
+        "2": "not mentioned"
+      }
+    },
+    "cowork": {
+      "label": "person #n is r's coworker",
+      "values": {
+        "1": "mentioned",
+        "2": "not mentioned"
+      }
+    },
+    "memgrp": {
+      "label": "person #n is member of r's group",
+      "values": {
+        "1": "mentioned",
+        "2": "not mentioned"
+      }
+    },
+    "neighbr": {
+      "label": "person #n is r's neighbor",
+      "values": {
+        "1": "mentioned",
+        "2": "not mentioned"
+      }
+    },
+    "friend": {
+      "label": "person #n is r's friend",
+      "values": {
+        "1": "mentioned",
+        "2": "not mentioned"
+      }
+    },
+    "advisor": {
+      "label": "person #n is r's advisor",
+      "values": {
+        "1": "mentioned",
+        "2": "not mentioned"
+      }
+    },
+    "other": {
+      "label": "person #n is other type of acquaintance",
+      "values": {
+        "1": "mentioned",
+        "2": "not mentioned"
+      }
+    },
+    "rclose": {
+      "label": "r feels especially close to person #n",
+      "values": {
+        "1": "especially close",
+        "2": "not esp. close",
+        "7": "refused"
+      }
+    },
+    "kin": {
+      "label": "alter is family member (derived from parent/sibling/child/othfam)",
+      "values": {
+        "1": "kin",
+        "2": "not kin"
+      }
+    }
+  },
+  "alter_alter": {
+    "ego_id": {
+      "label": "ego identifier ({year}_{id})"
+    },
+    "src_id": {
+      "label": "source alter nomination rank"
+    },
+    "tgt_id": {
+      "label": "target alter nomination rank"
+    }
+  }
+}

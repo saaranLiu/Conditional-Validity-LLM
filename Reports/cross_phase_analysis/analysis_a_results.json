@@ -1,0 +1,1650 @@
+{
+  "eval2_calibration": {
+    "by_task": {
+      "s0": {
+        "n_pairs": 34,
+        "mean_human": 0.1573,
+        "mean_llm": 0.2625,
+        "mean_inflation_llm_minus_human": 0.1052,
+        "pearson_r_human_vs_llm": 0.4999,
+        "pearson_p": 0.0026066500871211647,
+        "spearman_rho_human_vs_llm": 0.6428,
+        "spearman_p": 4.1448374878273626e-05,
+        "ols_slope_llm_on_human": 0.7367,
+        "share_llm_gt_human": 0.7353
+      },
+      "s0b": {
+        "n_pairs": 34,
+        "mean_human": 0.1579,
+        "mean_llm": 0.2485,
+        "mean_inflation_llm_minus_human": 0.0907,
+        "pearson_r_human_vs_llm": 0.3166,
+        "pearson_p": 0.06810227696393893,
+        "spearman_rho_human_vs_llm": 0.504,
+        "spearman_p": 0.002370530314704374,
+        "ols_slope_llm_on_human": 0.444,
+        "share_llm_gt_human": 0.5882
+      },
+      "s1": {
+        "n_pairs": 26,
+        "mean_human": 0.1658,
+        "mean_llm": 0.2117,
+        "mean_inflation_llm_minus_human": 0.046,
+        "pearson_r_human_vs_llm": 0.4873,
+        "pearson_p": 0.011564721787490712,
+        "spearman_rho_human_vs_llm": 0.5979,
+        "spearman_p": 0.0012545907161234447,
+        "ols_slope_llm_on_human": 0.7846,
+        "share_llm_gt_human": 0.5385
+      },
+      "s1b": {
+        "n_pairs": 26,
+        "mean_human": 0.1653,
+        "mean_llm": 0.1866,
+        "mean_inflation_llm_minus_human": 0.0214,
+        "pearson_r_human_vs_llm": 0.3944,
+        "pearson_p": 0.046187000014209896,
+        "spearman_rho_human_vs_llm": 0.6725,
+        "spearman_p": 0.00016765684925488115,
+        "ols_slope_llm_on_human": 0.5776,
+        "share_llm_gt_human": 0.4615
+      },
+      "s2": {
+        "n_pairs": 33,
+        "mean_human": 0.1547,
+        "mean_llm": 0.1524,
+        "mean_inflation_llm_minus_human": -0.0024,
+        "pearson_r_human_vs_llm": 0.5936,
+        "pearson_p": 0.000271163580819724,
+        "spearman_rho_human_vs_llm": 0.8041,
+        "spearman_p": 1.7286401781817166e-08,
+        "ols_slope_llm_on_human": 0.8052,
+        "share_llm_gt_human": 0.4242
+      }
+    },
+    "pooled": {
+      "n_pairs": 153,
+      "pearson_r_human_vs_llm": 0.4478,
+      "spearman_rho_human_vs_llm": 0.6394,
+      "mean_human": 0.1597,
+      "mean_llm": 0.2141,
+      "share_llm_gt_human": 0.5556
+    },
+    "rows": [
+      {
+        "dataset": "gss_1987",
+        "task": "s0",
+        "var_a": "prompt.age_group",
+        "var_b": "general_happiness",
+        "abs_human": 0.0622959211457054,
+        "abs_llm": 0.5004133118765929
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s0",
+        "var_a": "prompt.sex",
+        "var_b": "general_happiness",
+        "abs_human": 0.0236479392933357,
+        "abs_llm": 0.0374199604348866
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s0",
+        "var_a": "prompt.degree",
+        "var_b": "general_happiness",
+        "abs_human": 0.0760361622802275,
+        "abs_llm": 0.2864774270043767
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s0",
+        "var_a": "prompt.age_group",
+        "var_b": "self_rated_health",
+        "abs_human": 0.1989491723248015,
+        "abs_llm": 0.3786827956474327
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s0",
+        "var_a": "prompt.degree",
+        "var_b": "people_can_be_trusted",
+        "abs_human": 0.1969537701142948,
+        "abs_llm": 0.1518912655246671
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s0",
+        "var_a": "prompt.sex",
+        "var_b": "people_can_be_trusted",
+        "abs_human": 0.0748248898743608,
+        "abs_llm": 0.0214416500231575
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s0",
+        "var_a": "self_rated_health",
+        "var_b": "general_happiness",
+        "abs_human": 0.1878186734250651,
+        "abs_llm": 0.6496944454820608
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s0",
+        "var_a": "people_can_be_trusted",
+        "var_b": "people_are_helpful",
+        "abs_human": 0.2915577284730979,
+        "abs_llm": 0.7539759183502895
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s0",
+        "var_a": "party_identity",
+        "var_b": "political_ideology",
+        "abs_human": 0.1898635493045335,
+        "abs_llm": 0.2780053296474306
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s0",
+        "var_a": "religion",
+        "var_b": "religious_service_attendance",
+        "abs_human": 0.2354944654980623,
+        "abs_llm": 0.0956021330402342
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s0",
+        "var_a": "prompt.marital_status",
+        "var_b": "general_happiness",
+        "abs_human": 0.1603781923717791,
+        "abs_llm": 0.4665955437675694
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s0b",
+        "var_a": "prompt.age_group",
+        "var_b": "general_happiness",
+        "abs_human": 0.0606325819341036,
+        "abs_llm": 0.4654863334466072
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s0b",
+        "var_a": "prompt.sex",
+        "var_b": "general_happiness",
+        "abs_human": 0.0245799255143796,
+        "abs_llm": 0.0480795874328222
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s0b",
+        "var_a": "prompt.degree",
+        "var_b": "general_happiness",
+        "abs_human": 0.0786064051208492,
+        "abs_llm": 0.3734314027311747
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s0b",
+        "var_a": "prompt.age_group",
+        "var_b": "self_rated_health",
+        "abs_human": 0.1990973812627913,
+        "abs_llm": 0.2968687110573854
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s0b",
+        "var_a": "prompt.degree",
+        "var_b": "people_can_be_trusted",
+        "abs_human": 0.1970926880234096,
+        "abs_llm": 0.1097947718655789
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s0b",
+        "var_a": "prompt.sex",
+        "var_b": "people_can_be_trusted",
+        "abs_human": 0.0748884875507779,
+        "abs_llm": 0.0460262122392285
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s0b",
+        "var_a": "self_rated_health",
+        "var_b": "general_happiness",
+        "abs_human": 0.1930792231102703,
+        "abs_llm": 0.422612691748556
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s0b",
+        "var_a": "people_can_be_trusted",
+        "var_b": "people_are_helpful",
+        "abs_human": 0.2915673851819351,
+        "abs_llm": 0.6594513651813046
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s0b",
+        "var_a": "party_identity",
+        "var_b": "political_ideology",
+        "abs_human": 0.190062955493433,
+        "abs_llm": 0.4168247569039631
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s0b",
+        "var_a": "religion",
+        "var_b": "religious_service_attendance",
+        "abs_human": 0.2346252471877409,
+        "abs_llm": 0.3647670384681039
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s0b",
+        "var_a": "prompt.marital_status",
+        "var_b": "general_happiness",
+        "abs_human": 0.160825820104094,
+        "abs_llm": 0.419744153324367
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s1",
+        "var_a": "prompt.age_group",
+        "var_b": "general_happiness",
+        "abs_human": 0.0628559700444566,
+        "abs_llm": 0.2721313686067626
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s1",
+        "var_a": "prompt.sex",
+        "var_b": "general_happiness",
+        "abs_human": 0.020661236069663,
+        "abs_llm": 0.0721454484112407
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s1",
+        "var_a": "prompt.degree",
+        "var_b": "general_happiness",
+        "abs_human": 0.0816578862155047,
+        "abs_llm": 0.1965562970297661
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s1",
+        "var_a": "prompt.degree",
+        "var_b": "people_can_be_trusted",
+        "abs_human": 0.197721714994655,
+        "abs_llm": 0.0753167444887414
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s1",
+        "var_a": "prompt.sex",
+        "var_b": "people_can_be_trusted",
+        "abs_human": 0.0783143444802063,
+        "abs_llm": 0.0262542493331114
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s1",
+        "var_a": "people_can_be_trusted",
+        "var_b": "people_are_helpful",
+        "abs_human": 0.2898737166661954,
+        "abs_llm": 0.974395726300099
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s1",
+        "var_a": "party_identity",
+        "var_b": "political_ideology",
+        "abs_human": 0.1902448775770248,
+        "abs_llm": 0.3537436279165137
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s1",
+        "var_a": "religion",
+        "var_b": "religious_service_attendance",
+        "abs_human": 0.2346340197723886,
+        "abs_llm": 0.089064071755864
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s1",
+        "var_a": "prompt.marital_status",
+        "var_b": "general_happiness",
+        "abs_human": 0.1616283187874158,
+        "abs_llm": 0.1889991648398714
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s1b",
+        "var_a": "prompt.age_group",
+        "var_b": "general_happiness",
+        "abs_human": 0.0618473529209931,
+        "abs_llm": 0.2412843476125174
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s1b",
+        "var_a": "prompt.sex",
+        "var_b": "general_happiness",
+        "abs_human": 0.0201202912374208,
+        "abs_llm": 0.0463104058704609
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s1b",
+        "var_a": "prompt.degree",
+        "var_b": "general_happiness",
+        "abs_human": 0.0779219339034762,
+        "abs_llm": 0.1924843584845507
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s1b",
+        "var_a": "prompt.degree",
+        "var_b": "people_can_be_trusted",
+        "abs_human": 0.1964582806729093,
+        "abs_llm": 0.0828152116755391
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s1b",
+        "var_a": "prompt.sex",
+        "var_b": "people_can_be_trusted",
+        "abs_human": 0.0762527759397791,
+        "abs_llm": 0.0448435711634293
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s1b",
+        "var_a": "people_can_be_trusted",
+        "var_b": "people_are_helpful",
+        "abs_human": 0.2905214367184616,
+        "abs_llm": 0.8402539644912104
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s1b",
+        "var_a": "party_identity",
+        "var_b": "political_ideology",
+        "abs_human": 0.1889816605080196,
+        "abs_llm": 0.3635668921789804
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s1b",
+        "var_a": "religion",
+        "var_b": "religious_service_attendance",
+        "abs_human": 0.2350337997451194,
+        "abs_llm": 0.0647948988136635
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s1b",
+        "var_a": "prompt.marital_status",
+        "var_b": "general_happiness",
+        "abs_human": 0.159453858209219,
+        "abs_llm": 0.1665508503713212
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s2",
+        "var_a": "prompt.age_group",
+        "var_b": "general_happiness",
+        "abs_human": 0.0653138285796812,
+        "abs_llm": 0.053651161728174
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s2",
+        "var_a": "prompt.sex",
+        "var_b": "general_happiness",
+        "abs_human": 0.0213163810808959,
+        "abs_llm": 0.0048534721482216
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s2",
+        "var_a": "prompt.degree",
+        "var_b": "general_happiness",
+        "abs_human": 0.0793396100116501,
+        "abs_llm": 0.0589518656466497
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s2",
+        "var_a": "prompt.age_group",
+        "var_b": "self_rated_health",
+        "abs_human": 0.197059601784503,
+        "abs_llm": 0.2193192487671726
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s2",
+        "var_a": "prompt.degree",
+        "var_b": "people_can_be_trusted",
+        "abs_human": 0.1937169787344339,
+        "abs_llm": 0.0558168751176851
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s2",
+        "var_a": "prompt.sex",
+        "var_b": "people_can_be_trusted",
+        "abs_human": 0.074546680457948,
+        "abs_llm": 0.0185345694995648
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s2",
+        "var_a": "self_rated_health",
+        "var_b": "general_happiness",
+        "abs_human": 0.1863511395274358,
+        "abs_llm": 0.1279872764824381
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s2",
+        "var_a": "prompt.party_identity",
+        "var_b": "political_ideology",
+        "abs_human": 0.1933239933488779,
+        "abs_llm": 0.4116481618062806
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s2",
+        "var_a": "prompt.religion",
+        "var_b": "religious_service_attendance",
+        "abs_human": 0.2367329979800705,
+        "abs_llm": 0.2113115664697437
+      },
+      {
+        "dataset": "gss_1987",
+        "task": "s2",
+        "var_a": "prompt.marital_status",
+        "var_b": "general_happiness",
+        "abs_human": 0.1608345203424949,
+        "abs_llm": 0.0532202073125028
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s0",
+        "var_a": "prompt.age_group",
+        "var_b": "general_happiness",
+        "abs_human": 0.0660963289012717,
+        "abs_llm": 0.2996151069728169
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s0",
+        "var_a": "prompt.sex",
+        "var_b": "general_happiness",
+        "abs_human": 0.0717725692370519,
+        "abs_llm": 0.0118906733499985
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s0",
+        "var_a": "prompt.degree",
+        "var_b": "general_happiness",
+        "abs_human": 0.1148763952162483,
+        "abs_llm": 0.3149262772283178
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s0",
+        "var_a": "prompt.age_group",
+        "var_b": "self_rated_health",
+        "abs_human": 0.1131509165158685,
+        "abs_llm": 0.4262202362763237
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s0",
+        "var_a": "prompt.degree",
+        "var_b": "people_can_be_trusted",
+        "abs_human": 0.2011303037218428,
+        "abs_llm": 0.1779135682023904
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s0",
+        "var_a": "prompt.sex",
+        "var_b": "people_can_be_trusted",
+        "abs_human": 0.0495149063335908,
+        "abs_llm": 0.0577158634762979
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s0",
+        "var_a": "self_rated_health",
+        "var_b": "general_happiness",
+        "abs_human": 0.2674210032593432,
+        "abs_llm": 0.4210874865967703
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s0",
+        "var_a": "people_can_be_trusted",
+        "var_b": "people_are_helpful",
+        "abs_human": 0.3494293280520332,
+        "abs_llm": 0.7891004089756541
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s0",
+        "var_a": "party_identity",
+        "var_b": "political_ideology",
+        "abs_human": 0.26886993295514,
+        "abs_llm": 0.3732440973944375
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s0",
+        "var_a": "religion",
+        "var_b": "religious_service_attendance",
+        "abs_human": 0.20278461425159,
+        "abs_llm": 0.1735316574396283
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s0",
+        "var_a": "prompt.marital_status",
+        "var_b": "general_happiness",
+        "abs_human": 0.1857578785138748,
+        "abs_llm": 0.2821924071822526
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s0b",
+        "var_a": "prompt.age_group",
+        "var_b": "general_happiness",
+        "abs_human": 0.0727771982603048,
+        "abs_llm": 0.3734816219943002
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s0b",
+        "var_a": "prompt.sex",
+        "var_b": "general_happiness",
+        "abs_human": 0.0760212048403435,
+        "abs_llm": 0.0151138383636833
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s0b",
+        "var_a": "prompt.degree",
+        "var_b": "general_happiness",
+        "abs_human": 0.1178285842755333,
+        "abs_llm": 0.341339997281932
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s0b",
+        "var_a": "prompt.age_group",
+        "var_b": "self_rated_health",
+        "abs_human": 0.1142436992780986,
+        "abs_llm": 0.2582437290754544
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s0b",
+        "var_a": "prompt.degree",
+        "var_b": "people_can_be_trusted",
+        "abs_human": 0.204570416758517,
+        "abs_llm": 0.1946029985127103
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s0b",
+        "var_a": "prompt.sex",
+        "var_b": "people_can_be_trusted",
+        "abs_human": 0.0478906999699057,
+        "abs_llm": 0.0039167298961733
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s0b",
+        "var_a": "self_rated_health",
+        "var_b": "general_happiness",
+        "abs_human": 0.2725983635997838,
+        "abs_llm": 0.4794946084037439
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s0b",
+        "var_a": "people_can_be_trusted",
+        "var_b": "people_are_helpful",
+        "abs_human": 0.3521470934817132,
+        "abs_llm": 0.6625077572895032
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s0b",
+        "var_a": "party_identity",
+        "var_b": "political_ideology",
+        "abs_human": 0.2672463416692048,
+        "abs_llm": 0.4137317404973796
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s0b",
+        "var_a": "religion",
+        "var_b": "religious_service_attendance",
+        "abs_human": 0.2033969503313324,
+        "abs_llm": 0.4410299865211229
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s0b",
+        "var_a": "prompt.marital_status",
+        "var_b": "general_happiness",
+        "abs_human": 0.1817041813974925,
+        "abs_llm": 0.3442468384268806
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s1",
+        "var_a": "prompt.age_group",
+        "var_b": "general_happiness",
+        "abs_human": 0.08147098902174,
+        "abs_llm": 0.130404595434342
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s1",
+        "var_a": "prompt.sex",
+        "var_b": "general_happiness",
+        "abs_human": 0.0488192262328033,
+        "abs_llm": 0.0338542509131031
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s1",
+        "var_a": "prompt.degree",
+        "var_b": "general_happiness",
+        "abs_human": 0.1216075554930542,
+        "abs_llm": 0.160648707228373
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s1",
+        "var_a": "prompt.degree",
+        "var_b": "people_can_be_trusted",
+        "abs_human": 0.1915710215038439,
+        "abs_llm": 0.0332424870853956
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s1",
+        "var_a": "prompt.sex",
+        "var_b": "people_can_be_trusted",
+        "abs_human": 0.0458273244374616,
+        "abs_llm": 0.0729555803890214
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s1",
+        "var_a": "people_can_be_trusted",
+        "var_b": "people_are_helpful",
+        "abs_human": 0.3687077677244525,
+        "abs_llm": 1.0
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s1",
+        "var_a": "party_identity",
+        "var_b": "political_ideology",
+        "abs_human": 0.2843743050186677,
+        "abs_llm": 0.3921084727654281
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s1",
+        "var_a": "religion",
+        "var_b": "religious_service_attendance",
+        "abs_human": 0.2122429772864902,
+        "abs_llm": 0.1078901075357791
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s1",
+        "var_a": "prompt.marital_status",
+        "var_b": "general_happiness",
+        "abs_human": 0.1880397022252004,
+        "abs_llm": 0.1368174456618021
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s1b",
+        "var_a": "prompt.age_group",
+        "var_b": "general_happiness",
+        "abs_human": 0.0797105236349461,
+        "abs_llm": 0.1910934808836719
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s1b",
+        "var_a": "prompt.sex",
+        "var_b": "general_happiness",
+        "abs_human": 0.0482943888287478,
+        "abs_llm": 0.0317899119957456
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s1b",
+        "var_a": "prompt.degree",
+        "var_b": "general_happiness",
+        "abs_human": 0.1171210800422717,
+        "abs_llm": 0.1623099963981269
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s1b",
+        "var_a": "prompt.degree",
+        "var_b": "people_can_be_trusted",
+        "abs_human": 0.1897848956473074,
+        "abs_llm": 0.086176871909007
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s1b",
+        "var_a": "prompt.sex",
+        "var_b": "people_can_be_trusted",
+        "abs_human": 0.0454612242764402,
+        "abs_llm": 0.0094986423848242
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s1b",
+        "var_a": "people_can_be_trusted",
+        "var_b": "people_are_helpful",
+        "abs_human": 0.3748253850117081,
+        "abs_llm": 0.8933767770250689
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s1b",
+        "var_a": "party_identity",
+        "var_b": "political_ideology",
+        "abs_human": 0.2821578447755518,
+        "abs_llm": 0.4187593889462653
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s1b",
+        "var_a": "religion",
+        "var_b": "religious_service_attendance",
+        "abs_human": 0.2131095142249072,
+        "abs_llm": 0.4799783426412068
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s1b",
+        "var_a": "prompt.marital_status",
+        "var_b": "general_happiness",
+        "abs_human": 0.1873723048730103,
+        "abs_llm": 0.1404566870892391
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s2",
+        "var_a": "prompt.age_group",
+        "var_b": "general_happiness",
+        "abs_human": 0.0676370115168868,
+        "abs_llm": 0.0369449162933329
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s2",
+        "var_a": "prompt.sex",
+        "var_b": "general_happiness",
+        "abs_human": 0.0640951367291904,
+        "abs_llm": 0.0244091799265713
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s2",
+        "var_a": "prompt.degree",
+        "var_b": "general_happiness",
+        "abs_human": 0.1244724365793969,
+        "abs_llm": 0.085096023143655
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s2",
+        "var_a": "prompt.age_group",
+        "var_b": "self_rated_health",
+        "abs_human": 0.1171743597920625,
+        "abs_llm": 0.1736311388038022
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s2",
+        "var_a": "prompt.degree",
+        "var_b": "people_can_be_trusted",
+        "abs_human": 0.2015540085839803,
+        "abs_llm": 0.0671018935463922
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s2",
+        "var_a": "prompt.sex",
+        "var_b": "people_can_be_trusted",
+        "abs_human": 0.0420712373810107,
+        "abs_llm": 0.006959175991224
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s2",
+        "var_a": "people_can_be_trusted",
+        "var_b": "people_are_helpful",
+        "abs_human": 0.3506980967464324,
+        "abs_llm": 1.0
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s2",
+        "var_a": "prompt.party_identity",
+        "var_b": "political_ideology",
+        "abs_human": 0.2705395290197852,
+        "abs_llm": 0.4720651334226521
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s2",
+        "var_a": "prompt.religion",
+        "var_b": "religious_service_attendance",
+        "abs_human": 0.2064360343959055,
+        "abs_llm": 0.2131469564412727
+      },
+      {
+        "dataset": "gss_2010_network",
+        "task": "s2",
+        "var_a": "prompt.marital_status",
+        "var_b": "general_happiness",
+        "abs_human": 0.1878551165887481,
+        "abs_llm": 0.0625571261612056
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s0",
+        "var_a": "prompt.age_group",
+        "var_b": "days_lonely_past_week",
+        "abs_human": 0.0505252366006468,
+        "abs_llm": 0.0095370671096027
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s0",
+        "var_a": "prompt.gender",
+        "var_b": "days_lonely_past_week",
+        "abs_human": 0.000204599962885,
+        "abs_llm": 0.0039118735560067
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s0",
+        "var_a": "prompt.education",
+        "var_b": "days_lonely_past_week",
+        "abs_human": 0.0137940842693396,
+        "abs_llm": 0.0249389077999707
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s0",
+        "var_a": "prompt.age_group",
+        "var_b": "self_rated_health",
+        "abs_human": 0.1073060638131688,
+        "abs_llm": 0.2332031644446912
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s0",
+        "var_a": "prompt.gender",
+        "var_b": "self_rated_health",
+        "abs_human": 0.0601810878636309,
+        "abs_llm": 0.0461145449589286
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s0",
+        "var_a": "self_rated_health",
+        "var_b": "days_lonely_past_week",
+        "abs_human": 0.0662641111730015,
+        "abs_llm": 0.1817477867447205
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s0",
+        "var_a": "self_rated_health",
+        "var_b": "days_very_happy_past_week",
+        "abs_human": 0.0776290525057655,
+        "abs_llm": 0.2171713002774462
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s0",
+        "var_a": "days_lonely_past_week",
+        "var_b": "days_isolated_past_week",
+        "abs_human": 0.7376834342686867,
+        "abs_llm": 0.2997673219079981
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s0",
+        "var_a": "days_very_happy_past_week",
+        "var_b": "days_lonely_past_week",
+        "abs_human": 0.4069325325583651,
+        "abs_llm": 0.5023788220883787
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s0",
+        "var_a": "relatives_help_serious_problem",
+        "var_b": "friends_help_serious_problem",
+        "abs_human": 0.1601063646465552,
+        "abs_llm": 0.2640815777628043
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s0",
+        "var_a": "prompt.education",
+        "var_b": "relatives_help_serious_problem",
+        "abs_human": 0.0760941417343781,
+        "abs_llm": 0.0833483017747368
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s0",
+        "var_a": "party_identity",
+        "var_b": "voting_frequency",
+        "abs_human": 0.0027215719914656,
+        "abs_llm": 0.1108558553562468
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s0b",
+        "var_a": "prompt.age_group",
+        "var_b": "days_lonely_past_week",
+        "abs_human": 0.0514719752612357,
+        "abs_llm": 0.0098102078108903
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s0b",
+        "var_a": "prompt.gender",
+        "var_b": "days_lonely_past_week",
+        "abs_human": 0.0001561497001087,
+        "abs_llm": 0.0002703334591327
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s0b",
+        "var_a": "prompt.education",
+        "var_b": "days_lonely_past_week",
+        "abs_human": 0.0132159874238213,
+        "abs_llm": 0.0128281411702991
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s0b",
+        "var_a": "prompt.age_group",
+        "var_b": "self_rated_health",
+        "abs_human": 0.1085668635713308,
+        "abs_llm": 0.30375591858337
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s0b",
+        "var_a": "prompt.gender",
+        "var_b": "self_rated_health",
+        "abs_human": 0.0579977429166647,
+        "abs_llm": 0.0339629196939545
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s0b",
+        "var_a": "self_rated_health",
+        "var_b": "days_lonely_past_week",
+        "abs_human": 0.0647374913352594,
+        "abs_llm": 0.0206998796782215
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s0b",
+        "var_a": "self_rated_health",
+        "var_b": "days_very_happy_past_week",
+        "abs_human": 0.0778950000167551,
+        "abs_llm": 0.0429513583221576
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s0b",
+        "var_a": "days_lonely_past_week",
+        "var_b": "days_isolated_past_week",
+        "abs_human": 0.733104812561361,
+        "abs_llm": 0.1802245586949611
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s0b",
+        "var_a": "days_very_happy_past_week",
+        "var_b": "days_lonely_past_week",
+        "abs_human": 0.4028479799332271,
+        "abs_llm": 0.0423176348825576
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s0b",
+        "var_a": "relatives_help_serious_problem",
+        "var_b": "friends_help_serious_problem",
+        "abs_human": 0.1616052748254381,
+        "abs_llm": 0.1453389936056318
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s0b",
+        "var_a": "prompt.education",
+        "var_b": "relatives_help_serious_problem",
+        "abs_human": 0.0787308469953531,
+        "abs_llm": 0.0629331613976937
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s0b",
+        "var_a": "party_identity",
+        "var_b": "voting_frequency",
+        "abs_human": 0.0022895410890604,
+        "abs_llm": 0.4443132315673312
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s1",
+        "var_a": "prompt.age_group",
+        "var_b": "days_lonely_past_week",
+        "abs_human": 0.0531340886602628,
+        "abs_llm": 7.548420458375182e-05
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s1",
+        "var_a": "prompt.gender",
+        "var_b": "days_lonely_past_week",
+        "abs_human": 0.0002805737135097,
+        "abs_llm": 0.000399345478484
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s1",
+        "var_a": "prompt.education",
+        "var_b": "days_lonely_past_week",
+        "abs_human": 0.0144788627914623,
+        "abs_llm": 0.0087938782325665
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s1",
+        "var_a": "days_lonely_past_week",
+        "var_b": "days_isolated_past_week",
+        "abs_human": 0.7343191289905706,
+        "abs_llm": 0.270679640840006
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s1",
+        "var_a": "days_very_happy_past_week",
+        "var_b": "days_lonely_past_week",
+        "abs_human": 0.4041454034042912,
+        "abs_llm": 0.3825342639700264
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s1",
+        "var_a": "relatives_help_serious_problem",
+        "var_b": "friends_help_serious_problem",
+        "abs_human": 0.1609252970417981,
+        "abs_llm": 0.1943460573245433
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s1",
+        "var_a": "prompt.education",
+        "var_b": "relatives_help_serious_problem",
+        "abs_human": 0.0690475480008442,
+        "abs_llm": 0.0355781780229256
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s1",
+        "var_a": "party_identity",
+        "var_b": "voting_frequency",
+        "abs_human": 0.0130130553728141,
+        "abs_llm": 0.2957683926238474
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s1b",
+        "var_a": "prompt.age_group",
+        "var_b": "days_lonely_past_week",
+        "abs_human": 0.0493798039332176,
+        "abs_llm": 0.000384183546425
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s1b",
+        "var_a": "prompt.gender",
+        "var_b": "days_lonely_past_week",
+        "abs_human": 0.0006633358842813,
+        "abs_llm": 0.0005802082320931
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s1b",
+        "var_a": "prompt.education",
+        "var_b": "days_lonely_past_week",
+        "abs_human": 0.0165183994103585,
+        "abs_llm": 0.007715395514536
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s1b",
+        "var_a": "days_lonely_past_week",
+        "var_b": "days_isolated_past_week",
+        "abs_human": 0.7413564298075559,
+        "abs_llm": 0.1241699977313577
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s1b",
+        "var_a": "days_very_happy_past_week",
+        "var_b": "days_lonely_past_week",
+        "abs_human": 0.3999061532522957,
+        "abs_llm": 0.0794509788809465
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s1b",
+        "var_a": "relatives_help_serious_problem",
+        "var_b": "friends_help_serious_problem",
+        "abs_human": 0.1657132887306539,
+        "abs_llm": 0.0640453252262837
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s1b",
+        "var_a": "prompt.education",
+        "var_b": "relatives_help_serious_problem",
+        "abs_human": 0.0764306478887991,
+        "abs_llm": 0.0594854826466542
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s1b",
+        "var_a": "party_identity",
+        "var_b": "voting_frequency",
+        "abs_human": 0.0024461612429454,
+        "abs_llm": 0.0605266464789027
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s2",
+        "var_a": "prompt.age_group",
+        "var_b": "days_lonely_past_week",
+        "abs_human": 0.0419257782624326,
+        "abs_llm": 0.0066689359107008
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s2",
+        "var_a": "prompt.gender",
+        "var_b": "days_lonely_past_week",
+        "abs_human": 0.000315907997216,
+        "abs_llm": 0.0005152284111938
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s2",
+        "var_a": "prompt.education",
+        "var_b": "days_lonely_past_week",
+        "abs_human": 0.0102415288072136,
+        "abs_llm": 0.0020612022359644
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s2",
+        "var_a": "prompt.age_group",
+        "var_b": "self_rated_health",
+        "abs_human": 0.1652746772914265,
+        "abs_llm": 0.166683023025828
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s2",
+        "var_a": "prompt.gender",
+        "var_b": "self_rated_health",
+        "abs_human": 0.1330548880808859,
+        "abs_llm": 0.0897314487009476
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s2",
+        "var_a": "self_rated_health",
+        "var_b": "days_lonely_past_week",
+        "abs_human": 0.05917055743565,
+        "abs_llm": 0.0942727952305875
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s2",
+        "var_a": "self_rated_health",
+        "var_b": "days_very_happy_past_week",
+        "abs_human": 0.0813847820109525,
+        "abs_llm": 0.1380628577426991
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s2",
+        "var_a": "days_lonely_past_week",
+        "var_b": "days_isolated_past_week",
+        "abs_human": 0.7535989440183581,
+        "abs_llm": 0.3419529518966646
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s2",
+        "var_a": "days_very_happy_past_week",
+        "var_b": "days_lonely_past_week",
+        "abs_human": 0.3997008255578881,
+        "abs_llm": 0.2736146567890906
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s2",
+        "var_a": "relatives_help_serious_problem",
+        "var_b": "friends_help_serious_problem",
+        "abs_human": 0.1549989891101303,
+        "abs_llm": 0.2183360668509273
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s2",
+        "var_a": "prompt.education",
+        "var_b": "relatives_help_serious_problem",
+        "abs_human": 0.0838261335517856,
+        "abs_llm": 0.0921677259462863
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s2",
+        "var_a": "prompt.party_identity",
+        "var_b": "self_rated_health",
+        "abs_human": 0.0853214101444368,
+        "abs_llm": 0.1400254926237278
+      },
+      {
+        "dataset": "ucnets_w1",
+        "task": "s2",
+        "var_a": "prompt.religion_current",
+        "var_b": "self_rated_health",
+        "abs_human": 0.0966025539603465,
+        "abs_llm": 0.1065132430008075
+      }
+    ]
+  },
+  "eval3_calibration": {
+    "n_outcomes": 22,
+    "human_r2_range": [
+      0.0133,
+      0.2137
+    ],
+    "llm_r2_range": [
+      0.0183,
+      0.6198
+    ],
+    "pearson_r_human_vs_llm": -0.1306,
+    "pearson_p": 0.5623858555151987,
+    "mean_inflation": 0.1649,
+    "rows": [
+      {
+        "dataset": "gss_2010_network",
+        "outcome": "people_are_helpful",
+        "metric_human": 0.0763924916652619,
+        "metric_llm": 0.61975439776803,
+        "inflation": 0.5433619061027681
+      },
+      {
+        "dataset": "gss_1987",
+        "outcome": "general_happiness",
+        "metric_human": 0.0133475574950776,
+        "metric_llm": 0.5526484820261748,
+        "inflation": 0.5393009245310971
+      },
+      {
+        "dataset": "gss_1987",
+        "outcome": "self_rated_health",
+        "metric_human": 0.0184494173774933,
+        "metric_llm": 0.5244900108273896,
+        "inflation": 0.5060405934498963
+      },
+      {
+        "dataset": "gss_2010_network",
+        "outcome": "people_can_be_trusted",
+        "metric_human": 0.1039932463999826,
+        "metric_llm": 0.5975350253420855,
+        "inflation": 0.4935417789421029
+      },
+      {
+        "dataset": "gss_2010_network",
+        "outcome": "general_happiness",
+        "metric_human": 0.017532711831439,
+        "metric_llm": 0.488350012485741,
+        "inflation": 0.470817300654302
+      },
+      {
+        "dataset": "gss_2010_network",
+        "outcome": "self_rated_health",
+        "metric_human": 0.0255414047311308,
+        "metric_llm": 0.4577672690252984,
+        "inflation": 0.4322258642941676
+      },
+      {
+        "dataset": "gss_1987",
+        "outcome": "people_are_helpful",
+        "metric_human": 0.0353958108995889,
+        "metric_llm": 0.4228299436954306,
+        "inflation": 0.3874341327958417
+      },
+      {
+        "dataset": "gss_1987",
+        "outcome": "people_can_be_trusted",
+        "metric_human": 0.0974091482705227,
+        "metric_llm": 0.3893775439899668,
+        "inflation": 0.2919683957194441
+      },
+      {
+        "dataset": "ucnets_w1",
+        "outcome": "party_identity",
+        "metric_human": 0.0818773865713164,
+        "metric_llm": 0.2612801813647473,
+        "inflation": 0.1794027947934309
+      },
+      {
+        "dataset": "gss_1987",
+        "outcome": "party_identity",
+        "metric_human": 0.0658151517848179,
+        "metric_llm": 0.1580859736858272,
+        "inflation": 0.0922708219010093
+      },
+      {
+        "dataset": "gss_2010_network",
+        "outcome": "party_identity",
+        "metric_human": 0.031739521208803,
+        "metric_llm": 0.0837696315196052,
+        "inflation": 0.0520301103108022
+      },
+      {
+        "dataset": "ucnets_w1",
+        "outcome": "self_rated_health",
+        "metric_human": 0.027572122684994,
+        "metric_llm": 0.0499826718931332,
+        "inflation": 0.0224105492081392
+      },
+      {
+        "dataset": "ucnets_w1",
+        "outcome": "friends_help_serious_problem",
+        "metric_human": 0.0198189031987922,
+        "metric_llm": 0.0325052374158864,
+        "inflation": 0.0126863342170942
+      },
+      {
+        "dataset": "gss_2010_network",
+        "outcome": "political_ideology",
+        "metric_human": 0.0283936661399806,
+        "metric_llm": 0.0280650346080117,
+        "inflation": -0.0003286315319689023
+      },
+      {
+        "dataset": "gss_1987",
+        "outcome": "political_ideology",
+        "metric_human": 0.024470528868973,
+        "metric_llm": 0.0182715807542472,
+        "inflation": -0.006198948114725801
+      },
+      {
+        "dataset": "ucnets_w1",
+        "outcome": "days_very_happy_past_week",
+        "metric_human": 0.0322454920773709,
+        "metric_llm": 0.0236643253964972,
+        "inflation": -0.008581166680873702
+      },
+      {
+        "dataset": "ucnets_w1",
+        "outcome": "relatives_help_serious_problem",
+        "metric_human": 0.0428697597953935,
+        "metric_llm": 0.0289147298959835,
+        "inflation": -0.013955029899410002
+      },
+      {
+        "dataset": "ucnets_w1",
+        "outcome": "days_isolated_past_week",
+        "metric_human": 0.0809772517576397,
+        "metric_llm": 0.0507994600368416,
+        "inflation": -0.030177791720798104
+      },
+      {
+        "dataset": "ucnets_w1",
+        "outcome": "days_lonely_past_week",
+        "metric_human": 0.0849142011451804,
+        "metric_llm": 0.0434506669135683,
+        "inflation": -0.0414635342316121
+      },
+      {
+        "dataset": "gss_2010_network",
+        "outcome": "religion",
+        "metric_human": 0.0869356908945467,
+        "metric_llm": 0.0274508267499475,
+        "inflation": -0.05948486414459919
+      },
+      {
+        "dataset": "gss_1987",
+        "outcome": "religion",
+        "metric_human": 0.0837585218440168,
+        "metric_llm": 0.0197238975187522,
+        "inflation": -0.0640346243252646
+      },
+      {
+        "dataset": "ucnets_w1",
+        "outcome": "voting_frequency",
+        "metric_human": 0.2137495061936952,
+        "metric_llm": 0.0419668915005532,
+        "inflation": -0.171782614693142
+      }
+    ]
+  },
+  "phase2_info_sufficiency": {
+    "eta2_field_vs_size_bucket": {
+      "num_alters": 0.6232,
+      "kin_share": 0.1573,
+      "friend_share": 0.01,
+      "coworker_share": 0.0012,
+      "confidant_count": 0.127,
+      "companion_count": 0.1599
+    },
+    "B1_to_B2_table": {
+      "num_alters": {
+        "tv_B1": 0.7187,
+        "tv_cond": 0.7045,
+        "tv_gain": 0.0142,
+        "entropy_ratio_B1": 0.4872,
+        "entropy_ratio_cond": 0.5915,
+        "entropy_ratio_gain_abs": 0.1043,
+        "kappa_B1": null,
+        "kappa_cond": null,
+        "kappa_gain": null,
+        "eta2_vs_size_bucket": 0.6232
+      },
+      "kin_share": {
+        "tv_B1": 0.3534,
+        "tv_cond": 0.3073,
+        "tv_gain": 0.0461,
+        "entropy_ratio_B1": 0.5359,
+        "entropy_ratio_cond": 0.5544,
+        "entropy_ratio_gain_abs": 0.0185,
+        "kappa_B1": null,
+        "kappa_cond": null,
+        "kappa_gain": null,
+        "eta2_vs_size_bucket": 0.1573
+      },
+      "friend_share": {
+        "tv_B1": 0.7376,
+        "tv_cond": 0.6903,
+        "tv_gain": 0.0473,
+        "entropy_ratio_B1": 0.8092,
+        "entropy_ratio_cond": 0.9224,
+        "entropy_ratio_gain_abs": 0.1132,
+        "kappa_B1": null,
+        "kappa_cond": null,
+        "kappa_gain": null,
+        "eta2_vs_size_bucket": 0.01
+      },
+      "coworker_share": {
+        "tv_B1": 0.4929,
+        "tv_cond": 0.3641,
+        "tv_gain": 0.1288,
+        "entropy_ratio_B1": 6.8566,
+        "entropy_ratio_cond": 7.3393,
+        "entropy_ratio_gain_abs": -0.4827,
+        "kappa_B1": null,
+        "kappa_cond": null,
+        "kappa_gain": null,
+        "eta2_vs_size_bucket": 0.0012
+      },
+      "confidant_count": {
+        "tv_B1": 0.5024,
+        "tv_cond": 0.4184,
+        "tv_gain": 0.084,
+        "entropy_ratio_B1": 0.6593,
+        "entropy_ratio_cond": 0.8361,
+        "entropy_ratio_gain_abs": 0.1768,
+        "kappa_B1": null,
+        "kappa_cond": null,
+        "kappa_gain": null,
+        "eta2_vs_size_bucket": 0.127
+      },
+      "companion_count": {
+        "tv_B1": 0.5556,
+        "tv_cond": 0.6501,
+        "tv_gain": -0.0945,
+        "entropy_ratio_B1": 0.9904,
+        "entropy_ratio_cond": 1.0824,
+        "entropy_ratio_gain_abs": -0.0728,
+        "kappa_B1": null,
+        "kappa_cond": null,
+        "kappa_gain": null,
+        "eta2_vs_size_bucket": 0.1599
+      }
+    },
+    "B1_to_B3_table": {
+      "num_alters": {
+        "tv_B1": 0.7187,
+        "tv_cond": 0.5355,
+        "tv_gain": 0.1832,
+        "entropy_ratio_B1": 0.4872,
+        "entropy_ratio_cond": 0.6368,
+        "entropy_ratio_gain_abs": 0.1496,
+        "kappa_B1": null,
+        "kappa_cond": null,
+        "kappa_gain": null,
+        "correction_needed_abs": 5.526
+      },
+      "kin_share": {
+        "tv_B1": 0.3534,
+        "tv_cond": 0.4137,
+        "tv_gain": -0.0603,
+        "entropy_ratio_B1": 0.5359,
+        "entropy_ratio_cond": 0.4475,
+        "entropy_ratio_gain_abs": -0.0884,
+        "kappa_B1": null,
+        "kappa_cond": null,
+        "kappa_gain": null,
+        "correction_needed_abs": 0.0554
+      },
+      "friend_share": {
+        "tv_B1": 0.7376,
+        "tv_cond": 0.7813,
+        "tv_gain": -0.0437,
+        "entropy_ratio_B1": 0.8092,
+        "entropy_ratio_cond": 0.6142,
+        "entropy_ratio_gain_abs": -0.195,
+        "kappa_B1": null,
+        "kappa_cond": null,
+        "kappa_gain": null,
+        "correction_needed_abs": 0.3139
+      },
+      "coworker_share": {
+        "tv_B1": 0.4929,
+        "tv_cond": 0.0827,
+        "tv_gain": 0.4102,
+        "entropy_ratio_B1": 6.8566,
+        "entropy_ratio_cond": 3.0593,
+        "entropy_ratio_gain_abs": 3.7973,
+        "kappa_B1": null,
+        "kappa_cond": null,
+        "kappa_gain": null,
+        "correction_needed_abs": 0.1374
+      },
+      "confidant_count": {
+        "tv_B1": 0.5024,
+        "tv_cond": 0.4799,
+        "tv_gain": 0.0225,
+        "entropy_ratio_B1": 0.6593,
+        "entropy_ratio_cond": 0.6385,
+        "entropy_ratio_gain_abs": -0.0208,
+        "kappa_B1": null,
+        "kappa_cond": null,
+        "kappa_gain": null,
+        "correction_needed_abs": 0.6323
+      },
+      "companion_count": {
+        "tv_B1": 0.5556,
+        "tv_cond": 0.74,
+        "tv_gain": -0.1844,
+        "entropy_ratio_B1": 0.9904,
+        "entropy_ratio_cond": 1.0436,
+        "entropy_ratio_gain_abs": -0.034,
+        "kappa_B1": null,
+        "kappa_cond": null,
+        "kappa_gain": null,
+        "correction_needed_abs": 0.4054
+      }
+    },
+    "spearman_eta2_vs_tv_gain_B2": -0.8857,
+    "spearman_correction_needed_vs_tv_gain_B3": 0.2,
+    "population_priors": {
+      "n_egos": 1156,
+      "mean_num_alters": 17.57,
+      "median_num_alters": 17.0,
+      "mean_kin_share": 0.246,
+      "mean_friend_share": 0.289,
+      "median_confidant_count": 3.0,
+      "size_bucket_shares": {
+        "large": 0.569,
+        "medium": 0.404,
+        "small": 0.027
+      },
+      "mean_same_race_share": 0.963,
+      "median_same_race_share": 1.0,
+      "same_race_share_bucket_shares": {
+        "high": 0.906,
+        "low": 0.057,
+        "medium": 0.037
+      }
+    }
+  }
+}

@@ -1,0 +1,246 @@
+# Phase 2 content config for UCNets Wave 1 network generation.
+# Population framing only (SSDataBench-style). Do not name the survey instrument.
+#
+# UCNets is the primary experiment dataset and is the only one carrying all five
+# testing criteria. Supplementary surveys declare their own narrower configs.
+
+dataset: ucnets_w1
+
+# UCNets asks for up to 30 alters, so the model returns a fixed Top-5 roster that is
+# deliberately smaller than the network described by composition_summary.
+roster:
+  key: core_alters
+  mode: fixed
+  size: 5
+  rank_field: rank
+
+context: >
+  adults in the San Francisco Bay Area in 2015, including younger adults aged
+  21-30 and older adults aged 50-70
+
+population_context:
+  reference_year: 2015
+
+prompt:
+  opening: >
+    You are simulating one *randomly selected* synthetic individual sampled from
+  baseline_rules:
+    - Use ONLY the allowed values listed below for each field.
+    - If a field expects an array, return an array using zero or more allowed values.
+    - Do NOT invent keys outside the required schema.
+    - core_alters must contain exactly 5 objects with ranks 1 through 5.
+    - composition_summary describes the person's FULL ego network (not only the top-5).
+    - Do not copy stereotypical "spouse + two friends" templates unless the state truly supports it.
+
+skipped_tasks:
+  - n0b_anti_typology
+
+tasks:
+  n0_baseline_network:
+    instruction: >
+      Given this person's observed baseline state attributes, generate their likely
+      ego social network: a composition_summary of the full network and exactly
+      five core_alters (most important ties), using only allowed values.
+    prompt_condition: format_only
+    include_size_bucket: false
+    include_population_priors: false
+    generation_mode: oneshot
+
+  n1_size_bucket:
+    instruction: >
+      Given this person's observed baseline state attributes and their observed
+      network size bucket, generate their likely ego social network:
+      composition_summary of the full network and exactly five core_alters.
+      The generated num_alters must be consistent with the provided size_bucket.
+    prompt_condition: format_only
+    include_size_bucket: true
+    include_population_priors: false
+    generation_mode: oneshot
+
+  n2_population_prior:
+    instruction: >
+      Given this person's observed baseline state attributes and population-level
+      network priors for this sample, generate their likely ego social network:
+      composition_summary of the full network and exactly five core_alters.
+      Treat the priors as distributional anchors, not as this person's exact values.
+    prompt_condition: format_only
+    include_size_bucket: false
+    include_population_priors: true
+    generation_mode: oneshot
+
+  n3_roster_multistep:
+    instruction: >
+      Given this person's observed baseline state attributes, generate their likely
+      ego social network using a roster-style multi-step process (implemented by
+      the runner). Final output must match the same schema as the baseline task.
+    prompt_condition: format_only
+    include_size_bucket: false
+    include_population_priors: false
+    generation_mode: multistep_roster
+
+  n4_homophily:
+    instruction: >
+      Given this person's observed baseline state attributes and their observed
+      network racial-homophily bucket (share of alters who share the person's own
+      race/ethnicity), generate their likely ego social network: composition_summary
+      of the full network and exactly five core_alters. The generated mix of
+      same_race_as_ego values among core_alters should be consistent with the
+      provided same_race_share_bucket.
+    prompt_condition: format_only
+    include_size_bucket: false
+    include_population_priors: false
+    include_same_race_bucket: true
+    generation_mode: oneshot
+
+  n5_size_multistep:
+    instruction: >
+      Given this person's observed baseline state attributes and their observed
+      network size bucket, generate their likely ego social network using the
+      roster-style multi-step process (B4 format) plus the B2 size anchor.
+    prompt_condition: format_only
+    include_size_bucket: true
+    include_population_priors: false
+    generation_mode: multistep_roster
+    # Multistep combos cost 5 calls per person; share one fixed subsample with B7.
+    subsample_n: 400
+
+  n6_prior_multistep:
+    instruction: >
+      Given this person's observed baseline state attributes and population-level
+      network priors for this sample, generate their likely ego social network
+      using the roster-style multi-step process (B4 format) plus the B3 priors.
+    prompt_condition: format_only
+    include_size_bucket: false
+    include_population_priors: true
+    generation_mode: multistep_roster
+    subsample_n: 400
+
+relationship_allowed:
+  - spouse
+  - romantic_partner
+  - parent
+  - child
+  - sibling
+  - other_relative
+  - housemate
+  - friend
+  - coworker
+  - neighbor
+  - school
+  - church
+  - acquaintance
+  - other
+
+support_roles_allowed:
+  - companion
+  - confidant
+  - advisor
+  - practical_help
+  - injury_help
+  - r_helps_them
+  - difficult
+
+contact_frequency_allowed:
+  - daily
+  - weekly
+  - monthly
+  - several_times_year
+  - yearly_or_less
+  - never
+
+gender_allowed:
+  - male
+  - female
+
+same_race_allowed:
+  - "yes"
+  - "no"
+
+size_bucket_allowed:
+  - small
+  - medium
+  - large
+
+same_race_share_bucket_allowed:
+  - low
+  - medium
+  - high
+
+output_schema:
+  top_level_keys:
+    - composition_summary
+    - core_alters
+  composition_summary:
+    num_alters:
+      type: numeric
+      min: 1
+      max: 30
+    size_bucket:
+      - small
+      - medium
+      - large
+    kin_share:
+      type: numeric
+      min: 0
+      max: 1
+    friend_share:
+      type: numeric
+      min: 0
+      max: 1
+    coworker_share:
+      type: numeric
+      min: 0
+      max: 1
+    confidant_count:
+      type: numeric
+      min: 0
+      max: 30
+    companion_count:
+      type: numeric
+      min: 0
+      max: 30
+    pct_weekly_plus_contact:
+      type: numeric
+      min: 0
+      max: 1
+  core_alter_fields:
+    rank:
+      type: numeric
+      min: 1
+      max: 5
+    relationship: null  # filled from relationship_allowed
+    support_roles: null
+    contact_frequency: null
+    gender: null
+    same_race_as_ego: null
+
+# How this survey is scored. T3 values are recomputed from the roster (core_alters),
+# not from composition_summary.same_race_share (that field is the full network).
+evaluation:
+  size_bucket_bounds:
+    small: [1, 5]
+    medium: [6, 15]
+    large: [16, 30]
+  share_fields:
+    - kin_share
+    - friend_share
+    - coworker_share
+    - pct_weekly_plus_contact
+  count_fields:
+    - num_alters
+    - confidant_count
+    - companion_count
+  associations:
+    - {outcome: kin_share, anchor: age_group}
+    - {outcome: kin_share, anchor: marital_status}
+    - {outcome: num_alters, anchor: education}
+    - {outcome: friend_share, anchor: age_group}
+  t3_targets:
+    n4_homophily:
+      gold_field: same_race_share
+      bucket_field: same_race_share_bucket
+      prompt_key: same_race_share_bucket
+      compute:
+        kind: flag_share
+        field: same_race_as_ego
+        positive: ["yes"]

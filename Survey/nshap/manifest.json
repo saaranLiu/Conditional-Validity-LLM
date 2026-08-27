@@ -1,0 +1,94 @@
+{
+  "description": "NSHAP public-use data catalog (ICPSR/NACDA Series 706). Restricted-use files require a separate application.",
+  "rounds": [
+    {
+      "round": "Round1",
+      "years": "2005-2006",
+      "icpsr": 20541,
+      "doi": "10.3886/ICPSR20541.v10",
+      "url": "https://www.icpsr.umich.edu/web/NACDA/studies/20541",
+      "public_datasets": [
+        {"ds": 0, "name": "Study-Level Files (codebooks, documentation)"},
+        {"ds": 1, "name": "Core Data, Public-Use"},
+        {"ds": 4, "name": "Social Networks Data, Public-Use"},
+        {"ds": 8, "name": "P.I. Round 1 Public-Use Stata Data Files"}
+      ],
+      "restricted_only": [
+        {"ds": 2, "name": "Core Data, Restricted-Use"},
+        {"ds": 3, "name": "Marital/Cohabiting History Data"},
+        {"ds": 5, "name": "Social Networks Data, Restricted-Use"},
+        {"ds": 6, "name": "Medications Data"},
+        {"ds": 7, "name": "Sexual Partners Data"},
+        {"ds": 9, "name": "P.I. Round 1 Restricted-Use Stata Data Files"}
+      ]
+    },
+    {
+      "round": "Round2",
+      "years": "2010-2011",
+      "icpsr": 34921,
+      "doi": "10.3886/ICPSR34921.v5",
+      "url": "https://www.icpsr.umich.edu/web/NACDA/studies/34921",
+      "public_datasets": [
+        {"ds": 0, "name": "Study-Level Files"},
+        {"ds": 1, "name": "Core Data, Public-Use"},
+        {"ds": 3, "name": "Disposition of Round 1 Partner Data, Public-Use"},
+        {"ds": 5, "name": "Social Networks Data, Public-Use"},
+        {"ds": 7, "name": "Social Networks Update Data, Public-Use"},
+        {"ds": 12, "name": "Proxy Data, Public-Use"},
+        {"ds": 14, "name": "Sleep Statistics Data, Public-Use"},
+        {"ds": 16, "name": "P.I. Round 2 Public-Use Stata Data Files"}
+      ],
+      "restricted_only": [
+        {"ds": 2, "name": "Core Data, Restricted-Use"},
+        {"ds": 4, "name": "Disposition of Round 1 Partner Data, Restricted-Use"},
+        {"ds": 6, "name": "Social Networks Data, Restricted-Use"},
+        {"ds": 8, "name": "Social Networks Update Data, Restricted-Use"},
+        {"ds": 9, "name": "Partner History Data"},
+        {"ds": 10, "name": "Partner History Update Data"},
+        {"ds": 11, "name": "Medications Data"},
+        {"ds": 13, "name": "Proxy Data, Restricted-Use"},
+        {"ds": 15, "name": "Sleep Statistics Data, Restricted-Use"},
+        {"ds": 17, "name": "P.I. Round 2 Restricted-Use Stata Data Files"}
+      ]
+    },
+    {
+      "round": "Round3",
+      "years": "2015-2016 (+ COVID substudy 2020-2021)",
+      "icpsr": 36873,
+      "doi": "10.3886/ICPSR36873.v9",
+      "url": "https://www.icpsr.umich.edu/web/NACDA/studies/36873",
+      "public_datasets": [
+        {"ds": 0, "name": "Study-Level Files"},
+        {"ds": 1, "name": "Core Data, Public-Use"},
+        {"ds": 3, "name": "Social Networks Data, Public-Use"},
+        {"ds": 5, "name": "Disposition of Returning Respondent Partner Data, Public-Use"},
+        {"ds": 7, "name": "Proxy Data, Public-Use"},
+        {"ds": 9, "name": "COVID-19 Sub-study Data, Public-Use"},
+        {"ds": 11, "name": "P.I. Round 3 Public-Use Stata Data Files"}
+      ],
+      "restricted_only": [
+        {"ds": 2, "name": "Core Data, Restricted-Use"},
+        {"ds": 4, "name": "Social Networks Data, Restricted-Use"},
+        {"ds": 6, "name": "Disposition of Returning Respondent Partner Data, Restricted-Use"},
+        {"ds": 8, "name": "Proxy Data, Restricted-Use"},
+        {"ds": 10, "name": "COVID-19 Sub-study Data, Restricted-Use"},
+        {"ds": 12, "name": "P.I. Round 3 Restricted-Use Stata Data Files"}
+      ]
+    },
+    {
+      "round": "Round4",
+      "years": "2021-2023",
+      "icpsr": 39511,
+      "doi": "10.3886/ICPSR39511.v1",
+      "url": "https://www.icpsr.umich.edu/web/NACDA/studies/39511",
+      "public_datasets": [
+        {"ds": 0, "name": "Study-Level Files"},
+        {"ds": 1, "name": "Core Data, Public-Use"}
+      ],
+      "restricted_only": [
+        {"ds": 2, "name": "Core Data, Restricted-Use"}
+      ],
+      "note": "Check ICPSR study page for additional datasets released in later versions."
+    }
+  ]
+}

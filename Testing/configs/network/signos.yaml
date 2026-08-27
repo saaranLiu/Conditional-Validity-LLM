@@ -1,0 +1,267 @@
+# Phase 2 content config for the Signos dense personal-network survey.
+# Population framing only. Do not name the survey instrument.
+#
+# SUPPLEMENTARY dataset. Its job is Testing 3 (explicit interval following) for the one
+# estimand family that no other dataset in this project can support: ORIGIN HOMOPHILY.
+#
+# Why it is needed. Racial/ethnic homophily is the natural homophily target, but it is
+# degenerate everywhere else: 90.6% of UCNets egos sit at same_race_share = 1.0, and
+# same_race_share fails the MIN_BUCKET_SHARE criterion in every GSS network year. Signos
+# samples three immigrant communities in one city, so its same_origin_share spreads across
+# the full range and its tertiles split 31/33/36 -- a usable interval-following test where
+# the others have none. resides_in_spain_share (transnational reach) splits 31/27/41 and
+# serves as a second estimand for the same criterion, so a result here is not an artifact
+# of one particular share.
+#
+# Deliberately NOT run here: everything else. In particular the alter-alter CLOSURE target
+# is not used, even though this is the only dataset carrying a complete 435-pair census.
+# Piloting showed the measured closure depends more on how the tie list is elicited than on
+# the model: across two models the same rosters yielded densities from 0.018 to 1.000
+# depending on format, and no run produced the complete census. Registry section 4.4 has
+# the numbers. Closure therefore stays with gss_1985 and nshap_r1, whose alter-alter data
+# is observed and whose rosters are short enough to enumerate.
+#
+# Two consequences of the fixed roster, both intentional:
+#   - num_alters is always 30 by design, so network SIZE is not an estimand here and size
+#     error is not a meaningful metric for this dataset.
+#   - 70 respondents is enough to see whether stated intervals are followed, not enough for
+#     a distributional claim. See `underpowered_warning` in the priors file.
+#
+# No reference_year: the source data records each respondent's years of residence but not
+# the fieldwork year, and nothing in the archive documents it. Rather than invent one, the
+# temporal framing line is omitted from the prompt.
+
+dataset: signos
+
+# 30 alters x 7 fields runs to roughly 2000 output tokens, which overruns the runner's 2048
+# default and truncates the JSON mid-array -- 5 of 8 pilot rows were lost that way, logged
+# as unparseable rather than as truncated. The rows that did complete had exactly 30 alters,
+# so the roster length itself is not the problem.
+generation:
+  num_predict_min: 4096
+
+# Every respondent named exactly 30 people, so the roster is a fixed 30 -- far longer than
+# any other dataset here. Piloting confirmed the model returns exactly 30 alters reliably;
+# it was the 435-pair tie census that it could not do.
+roster:
+  key: alters
+  mode: fixed
+  size: 30
+  rank_field: alter_id
+
+context: >
+  first-generation immigrants from Chinese, Filipino and Punjabi Sikh communities
+  living in Barcelona, Spain
+
+prompt:
+  opening: >
+    You are simulating one *randomly selected* synthetic individual sampled from
+  baseline_rules:
+    - Use ONLY the allowed values listed below for each field.
+    - If a field expects an array, return an array using zero or more allowed values.
+    - Do NOT invent keys outside the required schema.
+    - alters must contain exactly 30 objects, with alter_id numbered 1 through 30.
+    - composition_summary.num_alters must equal 30.
+    - Do not copy stereotypical templates. A 30-person network should mix relationship types, genders and origins the way a real one does.
+  # Each proportion is spelled out as a single bare number: the compact
+  # "proportions in [0, 1]" phrasing makes the model return [0.5] instead of 0.5.
+  # This survey codes origin and residence relative to the respondent, so the alter fields
+  # are same/different flags rather than absolute country names.
+  schema_description_lines:
+    - "- composition_summary.num_alters: exactly 30"
+    - "- composition_summary.kin_share: a single decimal number from 0 to 1, NOT an array; the proportion who are blood relatives, in-laws or the spouse/partner"
+    - "- composition_summary.coworker_share: a single decimal number from 0 to 1, NOT an array"
+    - "- composition_summary.close_share: a single decimal number from 0 to 1, NOT an array; the proportion who are close or very close"
+    - "- composition_summary.confidant_share: a single decimal number from 0 to 1, NOT an array; the proportion this person confides personal problems in sometimes or often"
+    - "- composition_summary.same_sex_share: a single decimal number from 0 to 1, NOT an array"
+    - "- composition_summary.same_origin_share: a single decimal number from 0 to 1, NOT an array; the proportion from the same country of origin as this person"
+    - "- composition_summary.resides_in_spain_share: a single decimal number from 0 to 1, NOT an array; the proportion currently living in Spain"
+    - "- alters: array of exactly 30 objects, one per person named"
+    - "  - alter_id: 1..30"
+    - "  - relationship: one of {relationship}"
+    - "  - gender: one of {gender}"
+    - "  - closeness_to_ego: one of {closeness_to_ego}"
+    - "  - confides_personal_problems: one of {confides_personal_problems}"
+    - "  - same_origin_as_ego: one of {same_origin_as_ego} (same country of origin as this person)"
+    - "  - resides_in_spain: one of {resides_in_spain} (currently living in Spain)"
+
+tasks:
+  n0_baseline_network:
+    instruction: >
+      Given this person's observed baseline state attributes, generate the 30 people they
+      know well enough to name: relatives, friends, coworkers, neighbours and acquaintances,
+      whether those people live in Spain or elsewhere. Report a composition_summary and the
+      full list of 30 alters.
+    prompt_condition: format_only
+    include_size_bucket: false
+    include_population_priors: false
+    generation_mode: oneshot
+
+  n4o_same_origin:
+    instruction: >
+      Given this person's observed baseline state attributes and the observed share of their
+      network who come from the same country of origin as they do, generate the 30 people
+      they know: composition_summary and the full list of alters. The same_origin_as_ego
+      values among alters must be consistent with the provided bucket.
+    prompt_condition: format_only
+    include_size_bucket: false
+    include_population_priors: false
+    generation_mode: oneshot
+    # 条件桶为空时剔除该 ego，而不是用 fallback 编一个标签。见登记表 5.1。
+    require_condition_bucket: true
+    condition_bucket:
+      source: same_origin_share_bucket
+      prompt_key: same_origin_share_bucket
+      fallback: medium
+      # This survey's own empirical tertiles.
+      rule: >-
+        - same_origin_share_bucket is an observed conditioning attribute describing the share
+        of this person's 30 alters who come from the same country of origin as they do
+        (low<0.70, medium 0.70-0.89, high>=0.90). The same_origin_as_ego values among alters
+        should be consistent with this bucket.
+
+  n4r_resides_spain:
+    instruction: >
+      Given this person's observed baseline state attributes and the observed share of their
+      network currently living in Spain, generate the 30 people they know:
+      composition_summary and the full list of alters. The resides_in_spain values among
+      alters must be consistent with the provided bucket.
+    prompt_condition: format_only
+    include_size_bucket: false
+    include_population_priors: false
+    generation_mode: oneshot
+    require_condition_bucket: true
+    condition_bucket:
+      source: resides_in_spain_share_bucket
+      prompt_key: resides_in_spain_share_bucket
+      fallback: medium
+      rule: >-
+        - resides_in_spain_share_bucket is an observed conditioning attribute describing the
+        share of this person's 30 alters who currently live in Spain rather than abroad
+        (low<0.74, medium 0.74-0.96, high>=0.97). The resides_in_spain values among alters
+        should be consistent with this bucket.
+
+relationship_allowed:
+  - spouse_or_partner
+  - blood_relative
+  - in_law
+  - coworker
+  - neighbor
+  - association_or_club
+  - place_of_worship
+  - through_third_person
+  - school
+  - since_youth
+  - other
+
+gender_allowed:
+  - male
+  - female
+
+closeness_to_ego_allowed:
+  - not_at_all_close
+  - not_very_close
+  - fairly_close
+  - close
+  - very_close
+
+confides_personal_problems_allowed:
+  - never
+  - sometimes
+  - often
+
+same_origin_as_ego_allowed:
+  - "yes"
+  - "no"
+
+resides_in_spain_allowed:
+  - "yes"
+  - "no"
+
+same_origin_share_bucket_allowed:
+  - low
+  - medium
+  - high
+
+resides_in_spain_share_bucket_allowed:
+  - low
+  - medium
+  - high
+
+output_schema:
+  top_level_keys:
+    - composition_summary
+    - alters
+  composition_summary:
+    num_alters:
+      type: numeric
+      min: 30
+      max: 30
+    kin_share:
+      type: numeric
+      min: 0
+      max: 1
+    coworker_share:
+      type: numeric
+      min: 0
+      max: 1
+    close_share:
+      type: numeric
+      min: 0
+      max: 1
+    confidant_share:
+      type: numeric
+      min: 0
+      max: 1
+    same_sex_share:
+      type: numeric
+      min: 0
+      max: 1
+    same_origin_share:
+      type: numeric
+      min: 0
+      max: 1
+    resides_in_spain_share:
+      type: numeric
+      min: 0
+      max: 1
+  core_alter_fields:
+    alter_id:
+      type: numeric
+      min: 1
+      max: 30
+    relationship: null
+    gender: null
+    closeness_to_ego: null
+    confides_personal_problems: null
+    same_origin_as_ego: null
+    resides_in_spain: null
+
+evaluation:
+  share_fields:
+    - kin_share
+    - coworker_share
+    - close_share
+    - confidant_share
+    - same_sex_share
+    - same_origin_share
+    - resides_in_spain_share
+  count_fields:
+    - num_alters
+  t3_targets:
+    n4o_same_origin:
+      gold_field: same_origin_share
+      bucket_field: same_origin_share_bucket
+      prompt_key: same_origin_share_bucket
+      compute:
+        kind: flag_share
+        field: same_origin_as_ego
+        positive: ["yes"]
+    n4r_resides_spain:
+      gold_field: resides_in_spain_share
+      bucket_field: resides_in_spain_share_bucket
+      prompt_key: resides_in_spain_share_bucket
+      compute:
+        kind: flag_share
+        field: resides_in_spain
+        positive: ["yes"]

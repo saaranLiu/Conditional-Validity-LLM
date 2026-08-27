@@ -1,0 +1,123 @@
+# State-stage config for NSHAP round 1 (T4: health/loneliness → confidant network).
+# Population framing only. Do not name the survey instrument.
+#
+# S0 predicts health and the UCLA three-item loneliness scale. Background X
+# (age, gender, race, education, marital_status) stays human on both R0 and R1.
+# loneliness_scale is derived from the three items when building R1 prompts.
+
+context: >
+  adults aged 57 and older living in the United States in 2005
+
+population_context:
+  reference_year: 2005
+
+prompt:
+  opening: >
+    You are simulating one *randomly selected* synthetic individual sampled from
+  baseline_rules:
+    - Use ONLY the allowed values listed below for each field.
+    - If a field expects an array, return an array using zero or more allowed values.
+  anti_typology_rules:
+    - Preserve realistic population heterogeneity; do not collapse respondents into overly typical profiles.
+    - Do not assume unusually good health, unusually low loneliness, or unusually average attitudes.
+
+tasks:
+  s0_baseline_state:
+    instruction: >
+      Generate the respondent's likely health and loneliness using only the
+      background attributes provided.
+    prompt_condition: format_only
+    rule_sets: [baseline]
+    include_health_in_input: false
+    include_health_in_output: true
+
+input_variables:
+  age:
+    type: static
+    description: Age in years
+    domain: Demography
+    allowed:
+      type: numeric
+      min: 57
+      max: 85
+  gender:
+    type: static
+    description: Gender
+    domain: Demography
+    allowed:
+      - female
+      - male
+  race:
+    type: static
+    description: Harmonized race/ethnicity
+    domain: Demography
+    allowed:
+      - white
+      - black
+      - hispanic_non_black
+      - other
+  education:
+    type: static
+    description: Highest education
+    domain: SES
+    allowed:
+      - less_than_high_school
+      - high_school_or_equivalent
+      - some_college_or_associate
+      - bachelors_or_more
+  marital_status:
+    type: static
+    description: Marital status
+    domain: Family
+    allowed:
+      - married
+      - living_with_partner
+      - separated
+      - divorced
+      - widowed
+      - never_married
+
+output_variables:
+  self_rated_health:
+    type: static
+    description: Respondent's self-rated physical health.
+    domain: HealthWellBeing
+    allowed:
+      - poor
+      - fair
+      - good
+      - very_good
+      - excellent
+  lacks_companionship:
+    type: static
+    description: How often the respondent feels they lack companionship.
+    domain: HealthWellBeing
+    allowed:
+      - hardly_ever
+      - some_of_the_time
+      - often
+  feels_left_out:
+    type: static
+    description: How often the respondent feels left out.
+    domain: HealthWellBeing
+    allowed:
+      - hardly_ever
+      - some_of_the_time
+      - often
+  feels_isolated:
+    type: static
+    description: How often the respondent feels isolated from others.
+    domain: HealthWellBeing
+    allowed:
+      - hardly_ever
+      - some_of_the_time
+      - often
+
+original_data:
+  source: NSHAP_r1
+  description: >
+    NSHAP round 1 confidant-network respondents. S0 targets are PHYSHLTH and the
+    UCLA loneliness items (COMPANION / LEFTOUT / ISOLATED), split from network gold.
+  file: ./Survey/nshap/cleaned/nshap_r1_network_gold.jsonl
+  task_files:
+    s0_baseline_state: ./Survey/nshap/cleaned/nshap_r1_s0.jsonl

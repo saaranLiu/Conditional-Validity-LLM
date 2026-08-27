@@ -1,0 +1,4 @@
+field,mean_human,mean_llm_b1,mean_llm_b3,mean_shift_toward_human,var_mean_ratio_human,var_mean_ratio_llm_b1,var_mean_ratio_llm_b3,entropy_ratio_b1,entropy_ratio_b3,reading
+num_alters,17.6554,12.1499,16.7943,-4.6444,3.0074,0.6774,0.656,0.4849,0.6375,population prior should shift mean without further compressing variance/entropy
+confidant_count,3.2742,2.6289,2.9697,-0.3408,1.1238,0.313,0.2546,0.6588,0.6383,population prior should shift mean without further compressing variance/entropy
+companion_count,5.1426,4.7139,7.9735,2.4022,0.8326,0.6124,1.0627,0.9836,1.0373,population prior should shift mean without further compressing variance/entropy

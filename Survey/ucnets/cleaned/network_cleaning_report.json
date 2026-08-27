@@ -1,0 +1,40 @@
+{
+  "alters_path": "/home/bld/data/data2/jiaxin/simulation/UCNets (UC Berkeley Social Networks Study)/processed/by_wave/Wave1/alters.csv",
+  "n_alters_rows": 20313,
+  "n_alter_egos": 1156,
+  "n_phase1_state_task1": 1159,
+  "n_overlap": 1156,
+  "n_analysis": 1156,
+  "only_state": [
+    "7100000001915",
+    "7200000009081",
+    "8000000000651"
+  ],
+  "only_alters": [],
+  "skipped_no_alters": 0,
+  "size_bucket_counts": {
+    "medium": 467,
+    "large": 658,
+    "small": 31
+  },
+  "population_priors": {
+    "n_egos": 1156,
+    "mean_num_alters": 17.57,
+    "median_num_alters": 17.0,
+    "mean_kin_share": 0.246,
+    "mean_friend_share": 0.289,
+    "median_confidant_count": 3.0,
+    "size_bucket_shares": {
+      "large": 0.569,
+      "medium": 0.404,
+      "small": 0.027
+    },
+    "mean_same_race_share": 0.963,
+    "median_same_race_share": 1.0,
+    "same_race_share_bucket_shares": {
+      "high": 0.906,
+      "low": 0.057,
+      "medium": 0.037
+    }
+  }
+}

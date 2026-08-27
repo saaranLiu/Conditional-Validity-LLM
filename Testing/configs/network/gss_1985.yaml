@@ -1,0 +1,256 @@
+# Phase 2 content config for the 1985 GSS network module.
+# Population framing only. Do not name the survey instrument.
+#
+# SUPPLEMENTARY dataset. Its only job is Testing 3 (explicit interval following),
+# which UCNets cannot support well: 90.6% of UCNets egos sit at same_race_share = 1.0,
+# so its homophily buckets are degenerate. This survey carries the alter-alter matrix,
+# giving a triadic-closure target whose tertiles split 27/36/37.
+#
+# Deliberately NOT run here: B2/B4/B6/B7 and Testing 5 (intervention additivity).
+# Those stay with UCNets.
+
+dataset: gss_1985
+
+# The name generator caps at 5, so the roster is the person's COMPLETE nomination list
+# and its length must equal num_alters. This differs from the UCNets fixed Top-5.
+roster:
+  key: alters
+  mode: variable
+  min_size: 1
+  max_size: 5
+  rank_field: alter_id
+
+context: >
+  adults in the United States in 1985
+
+population_context:
+  reference_year: 1985
+
+prompt:
+  opening: >
+    You are simulating one *randomly selected* synthetic individual sampled from
+  baseline_rules:
+    - Use ONLY the allowed values listed below for each field.
+    - If a field expects an array, return an array using zero or more allowed values.
+    - Do NOT invent keys outside the required schema.
+    - alters must list every person in this individual's discussion network, at most 5, with alter_id numbered 1 upward.
+    - composition_summary.num_alters must equal the number of objects in alters.
+    - alter_ties must contain one entry for every unordered pair of alters, so an individual with n alters has n*(n-1)/2 entries.
+    - Do not copy stereotypical "spouse + two friends" templates unless the state truly supports it.
+  # This survey's coding differs from UCNets: absolute alter race instead of a
+  # same-race flag, no support-role roster, and a 4-level contact scale.
+  schema_description_lines:
+    # Each proportion is spelled out as a single bare number. The compact
+    # "proportions in [0, 1]" phrasing made llama3.1 return [0.5] instead of 0.5 for these
+    # fields, which failed schema validation on 7 of 12 pilot rows.
+    - "- composition_summary.num_alters: a single integer from 1 to 5"
+    - "- composition_summary.size_bucket: one of {size_bucket} (small=1-2, medium=3-4, large=5)"
+    - "- composition_summary.kin_share: a single decimal number from 0 to 1, NOT an array"
+    - "- composition_summary.friend_share: a single decimal number from 0 to 1, NOT an array"
+    - "- composition_summary.coworker_share: a single decimal number from 0 to 1, NOT an array"
+    - "- composition_summary.pct_weekly_plus_contact: a single decimal number from 0 to 1, NOT an array; the proportion contacted almost_daily or weekly"
+    - "- alters: array of 1 to 5 objects, one per person named"
+    - "  - alter_id: 1..num_alters"
+    - "  - relationship: one of {relationship}"
+    - "  - gender: one of {gender}"
+    - "  - age: integer years"
+    - "  - race: one of {race}"
+    - "  - contact_frequency: one of {contact_frequency}"
+    - "- alter_ties: array of objects describing how well each pair of alters knows each other"
+    - "  - src_id / tgt_id: alter_id values, src_id < tgt_id"
+    - "  - tie_strength: one of {tie_strength}"
+
+tasks:
+  n0_baseline_network:
+    instruction: >
+      Given this person's observed baseline state attributes, generate their likely
+      core discussion network: the people with whom they discussed matters important
+      to them over the past six months. Report a composition_summary, the full list
+      of alters, and how well each pair of alters knows each other.
+    prompt_condition: format_only
+    include_size_bucket: false
+    include_population_priors: false
+    generation_mode: oneshot
+
+  n4c_closure:
+    instruction: >
+      Given this person's observed baseline state attributes and the observed degree of
+      closeness among their alters, generate their likely core discussion network:
+      composition_summary, the full list of alters, and how well each pair of alters
+      knows each other. The share of alter pairs marked especially_close must be
+      consistent with the provided closure bucket.
+    prompt_condition: format_only
+    include_size_bucket: false
+    include_population_priors: false
+    generation_mode: oneshot
+    # 条件桶为空时剔除该 ego，而不是用 fallback 编一个标签。见登记表 5.1。
+    require_condition_bucket: true
+    condition_bucket:
+      source: esp_close_density_bucket
+      prompt_key: alter_closure_bucket
+      fallback: medium
+      # Cutoffs are this survey's own empirical tertiles, not UCNets'.
+      rule: >-
+        - alter_closure_bucket is an observed conditioning attribute describing the share of
+        this person's alter pairs who are especially close to each other (low<0.17, medium
+        0.17-0.49, high>=0.50). The tie_strength values in alter_ties should be consistent
+        with this bucket.
+
+  n4s_sex_homophily:
+    instruction: >
+      Given this person's observed baseline state attributes and the observed share of
+      their alters who share their own gender, generate their likely core discussion
+      network: composition_summary, the full list of alters, and how well each pair of
+      alters knows each other. The gender mix among alters must be consistent with the
+      provided bucket.
+    prompt_condition: format_only
+    include_size_bucket: false
+    include_population_priors: false
+    generation_mode: oneshot
+    # 条件桶为空时剔除该 ego，而不是用 fallback 编一个标签。见登记表 5.1。
+    require_condition_bucket: true
+    condition_bucket:
+      source: same_sex_share_bucket
+      prompt_key: same_sex_share_bucket
+      fallback: medium
+      rule: >-
+        - same_sex_share_bucket is an observed conditioning attribute describing the share of
+        this person's alters who are the same gender as they are (low<0.50, medium 0.50-0.74,
+        high>=0.75). The gender values among alters should be consistent with this bucket.
+
+relationship_allowed:
+  - spouse
+  - parent
+  - sibling
+  - child
+  - other_relative
+  - coworker
+  - group_member
+  - neighbor
+  - friend
+  - advisor
+  - other
+
+contact_frequency_allowed:
+  - almost_daily
+  - weekly
+  - monthly
+  - less_than_monthly
+
+gender_allowed:
+  - male
+  - female
+
+race_allowed:
+  - asian
+  - black
+  - hispanic
+  - white
+  - other
+
+tie_strength_allowed:
+  - especially_close
+  - know_each_other
+  - total_strangers
+
+size_bucket_allowed:
+  - small
+  - medium
+  - large
+
+closure_bucket_allowed:
+  - low
+  - medium
+  - high
+
+output_schema:
+  top_level_keys:
+    - composition_summary
+    - alters
+    - alter_ties
+  composition_summary:
+    num_alters:
+      type: numeric
+      min: 1
+      max: 5
+    size_bucket:
+      - small
+      - medium
+      - large
+    kin_share:
+      type: numeric
+      min: 0
+      max: 1
+    friend_share:
+      type: numeric
+      min: 0
+      max: 1
+    coworker_share:
+      type: numeric
+      min: 0
+      max: 1
+    pct_weekly_plus_contact:
+      type: numeric
+      min: 0
+      max: 1
+  core_alter_fields:
+    alter_id:
+      type: numeric
+      min: 1
+      max: 5
+    relationship: null
+    gender: null
+    age:
+      type: numeric
+      min: 0
+      max: 110
+    race: null
+    contact_frequency: null
+  extra_lists:
+    alter_ties:
+      max_len: 10  # C(5,2)
+      fields:
+        src_id:
+          type: numeric
+          min: 1
+          max: 5
+        tgt_id:
+          type: numeric
+          min: 1
+          max: 5
+        tie_strength: null
+
+evaluation:
+  size_bucket_bounds:
+    small: [1, 2]
+    medium: [3, 4]
+    large: [5, 5]
+  share_fields:
+    - kin_share
+    - friend_share
+    - coworker_share
+    - pct_weekly_plus_contact
+  count_fields:
+    - num_alters
+  associations:
+    - {outcome: kin_share, anchor: age_group}
+    - {outcome: kin_share, anchor: marital_status}
+    - {outcome: num_alters, anchor: degree}
+    - {outcome: friend_share, anchor: age_group}
+  t3_targets:
+    n4c_closure:
+      gold_field: esp_close_density
+      bucket_field: esp_close_density_bucket
+      prompt_key: alter_closure_bucket
+      compute:
+        kind: pair_share
+        field: tie_strength
+        positive: [especially_close]
+    n4s_sex_homophily:
+      gold_field: same_sex_share
+      bucket_field: same_sex_share_bucket
+      prompt_key: same_sex_share_bucket
+      compute:
+        kind: ego_match
+        field: gender
+        ego_fields: [sex, gender]

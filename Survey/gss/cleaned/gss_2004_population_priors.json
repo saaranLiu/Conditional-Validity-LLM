@@ -1,0 +1,95 @@
+{
+  "dataset": "gss_2004",
+  "source_year": 2004,
+  "n_egos": 1069,
+  "mean_num_alters": 2.6567,
+  "median_num_alters": 2,
+  "size_bucket_shares": {
+    "small": 0.509,
+    "medium": 0.337,
+    "large": 0.154
+  },
+  "min_alters_for_density": 3,
+  "bucket_cutoffs": {
+    "esp_close_density": {
+      "low": "< 0.2",
+      "medium": "0.2 - 0.6",
+      "high": ">= 0.6",
+      "cuts": [
+        0.2,
+        0.6
+      ]
+    },
+    "same_sex_share": {
+      "low": "< 0.5",
+      "medium": "0.5 - 0.75",
+      "high": ">= 0.75",
+      "cuts": [
+        0.5,
+        0.75
+      ]
+    },
+    "age_homophily_share": {
+      "low": "< 0.3333",
+      "medium": "0.3333 - 0.6667",
+      "high": ">= 0.6667",
+      "cuts": [
+        0.3333,
+        0.6667
+      ]
+    }
+  },
+  "bucket_shares": {
+    "esp_close_density": {
+      "medium": 0.379,
+      "high": 0.339,
+      "low": 0.282,
+      "n_labelled": 525
+    },
+    "same_sex_share": {
+      "medium": 0.355,
+      "high": 0.337,
+      "low": 0.307,
+      "n_labelled": 1064
+    },
+    "age_homophily_share": {
+      "high": 0.347,
+      "low": 0.332,
+      "medium": 0.321,
+      "n_labelled": 1059
+    }
+  },
+  "mean_kin_share": 0.362,
+  "median_kin_share": 0.3333,
+  "n_kin_share": 1069,
+  "mean_friend_share": 0.5303,
+  "median_friend_share": 0.5,
+  "n_friend_share": 1069,
+  "mean_coworker_share": 0.1099,
+  "median_coworker_share": 0.0,
+  "n_coworker_share": 1069,
+  "mean_neighbor_share": 0.0514,
+  "median_neighbor_share": 0.0,
+  "n_neighbor_share": 1069,
+  "mean_pct_weekly_plus_contact": 0.8834,
+  "median_pct_weekly_plus_contact": 1.0,
+  "n_pct_weekly_plus_contact": 1063,
+  "mean_same_race_share": 0.8883,
+  "median_same_race_share": 1.0,
+  "n_same_race_share": 1064,
+  "mean_same_sex_share": 0.5567,
+  "median_same_sex_share": 0.6,
+  "n_same_sex_share": 1064,
+  "mean_age_homophily_share": 0.474,
+  "median_age_homophily_share": 0.5,
+  "n_age_homophily_share": 1059,
+  "mean_educ_homophily_share": 0.7379,
+  "median_educ_homophily_share": 1.0,
+  "n_educ_homophily_share": 1052,
+  "mean_density": 0.8305,
+  "median_density": 1.0,
+  "n_density": 787,
+  "mean_esp_close_density": 0.4554,
+  "median_esp_close_density": 0.3333,
+  "n_esp_close_density": 787
+}

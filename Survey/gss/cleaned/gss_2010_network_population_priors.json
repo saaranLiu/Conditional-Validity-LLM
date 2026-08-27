@@ -1,0 +1,50 @@
+{
+  "dataset": "gss_2010_network",
+  "source_year": 2010,
+  "n_egos": 1093,
+  "mean_num_alters": 2.7164,
+  "median_num_alters": 3,
+  "size_bucket_shares": {
+    "small": 0.492,
+    "medium": 0.342,
+    "large": 0.166
+  },
+  "min_alters_for_density": 3,
+  "bucket_cutoffs": {
+    "same_sex_share": {
+      "low": "< 0.5",
+      "medium": "0.5 - 0.75",
+      "high": ">= 0.75",
+      "cuts": [
+        0.5,
+        0.75
+      ]
+    }
+  },
+  "bucket_shares": {
+    "same_sex_share": {
+      "high": 0.353,
+      "medium": 0.33,
+      "low": 0.317,
+      "n_labelled": 1092
+    }
+  },
+  "mean_kin_share": 0.3949,
+  "median_kin_share": 0.4,
+  "n_kin_share": 1093,
+  "mean_friend_share": 0.4435,
+  "median_friend_share": 0.4,
+  "n_friend_share": 1093,
+  "mean_coworker_share": 0.0903,
+  "median_coworker_share": 0.0,
+  "n_coworker_share": 1093,
+  "mean_neighbor_share": 0.0341,
+  "median_neighbor_share": 0.0,
+  "n_neighbor_share": 1093,
+  "mean_same_race_share": 0.9066,
+  "median_same_race_share": 1.0,
+  "n_same_race_share": 1091,
+  "mean_same_sex_share": 0.5594,
+  "median_same_sex_share": 0.6,
+  "n_same_sex_share": 1092
+}

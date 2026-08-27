@@ -1,0 +1,503 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Package Id='1233609929687' InUse='Y' Creator='2.0 Beta 9 (7 Apr 2004)' Updated='02/02/2009 10:25 PM'>
+  <Study>
+    <name>SIGnos</name>
+    <numalters>30</numalters>
+    <altersamplingmodel>0</altersamplingmodel>
+    <altersamplingparameter>30</altersamplingparameter>
+    <questionorder questiontype='1'>
+      <id>1233045267984</id>
+      <id>1233045918046</id>
+      <id>1233045938375</id>
+      <id>1233046068421</id>
+      <id>1233046319734</id>
+      <id>1233046536890</id>
+      <id>1233046660015</id>
+      <id>1233046678921</id>
+      <id>1233046773875</id>
+      <id>1233046874093</id>
+      <id>1233047018125</id>
+      <id>1233047085359</id>
+      <id>1233047093625</id>
+      <id>1233047253234</id>
+      <id>1233047292203</id>
+      <id>1233047305625</id>
+      <id>1233131650265</id>
+      <id>1233047345796</id>
+      <id>1233047406328</id>
+      <id>1233047518031</id>
+      <id>1233047563390</id>
+      <id>1233047668968</id>
+    </questionorder>
+    <questionorder questiontype='2'>
+      <id>1233047986015</id>
+    </questionorder>
+    <questionorder questiontype='3'>
+      <id>1233048009250</id>
+      <id>1233048140187</id>
+      <id>1233048247421</id>
+      <id>1233048585015</id>
+      <id>1233048601125</id>
+      <id>1233048625531</id>
+      <id>1233048420484</id>
+      <id>1233048734703</id>
+    </questionorder>
+    <questionorder questiontype='4'>
+      <id>1233048852562</id>
+    </questionorder>
+  </Study>
+  <QuestionList>
+    <Question>
+      <!--ID : 1233048140187, type=ALTER, Title : 25. Proximidad text : ¿Cómo de próximo_a se siente de $$?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233048140187</Id>
+      <QuestionType>3</QuestionType>
+      <AnswerType>0</AnswerType>
+      <QuestionTitle>25. Proximidad</QuestionTitle>
+      <QuestionText>¿Cómo de próximo_a se siente de $$?</QuestionText>
+      <Answers>
+        <AnswerText index='0' value='0' adjacent='false'>No me siento nada próximo_a</AnswerText>
+        <AnswerText index='1' value='1' adjacent='false'>No muy próximo_a</AnswerText>
+        <AnswerText index='2' value='2' adjacent='false'>Bastante próximo_a</AnswerText>
+        <AnswerText index='3' value='3' adjacent='false'>Próximo_a</AnswerText>
+        <AnswerText index='4' value='4' adjacent='false'>Muy próximo_a</AnswerText>
+      </Answers>
+    </Question>
+    <Question>
+      <!--ID : 1233048734703, type=ALTER, Title : 31. Lugar de encuentro text : ¿En qué lugar de Barcelona suele encontrarse con $$? Mire el mapa con las paradas de Metro e indique el número más cercano ...
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233048734703</Id>
+      <QuestionType>3</QuestionType>
+      <AnswerType>2</AnswerType>
+      <QuestionTitle>31. Lugar de encuentro</QuestionTitle>
+      <QuestionText>¿En qué lugar de Barcelona suele encontrarse con $$? Mire el mapa con las paradas de Metro e indique el número más cercano ...</QuestionText>
+    </Question>
+    <Question>
+      <!--ID : 1233047986015, type=ALTER_PROMPT, Title : 23. Generador de nombres text : Por favor, escriba una lista de 30 personas que Usted conozca por su nombre y viceversa. Puede ser cualquier persona. Intente incluir gente que sea próxima e importante para Usted. También puede incluir personas que pueden no ser tan cercanas pero que acostumbra a ver mucho.  Escriba el nombre y el apellido de forma abreviada para que solamente Usted pueda reconocer a las personas. Es importante que no abrevie demasiado para poder reconocerlas más tarde. Por ejemplo: Mig Cervan por "Miguel de Cervantes"
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233047986015</Id>
+      <QuestionType>2</QuestionType>
+      <AnswerType>2</AnswerType>
+      <QuestionTitle>23. Generador de nombres</QuestionTitle>
+      <QuestionText>Por favor, escriba una lista de 30 personas que Usted conozca por su nombre y viceversa. Puede ser cualquier persona. Intente incluir gente que sea próxima e importante para Usted. También puede incluir personas que pueden no ser tan cercanas pero que acostumbra a ver mucho.  Escriba el nombre y el apellido de forma abreviada para que solamente Usted pueda reconocer a las personas. Es importante que no abrevie demasiado para poder reconocerlas más tarde. Por ejemplo: Mig Cervan por &quot;Miguel de Cervantes&quot;</QuestionText>
+    </Question>
+    <Question>
+      <!--ID : 1233047018125, type=EGO, Title : 11. Regularización text : ¿Tiene su situación regularizada en España (¨papeles¨)?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233047018125</Id>
+      <QuestionType>1</QuestionType>
+      <AnswerType>0</AnswerType>
+      <QuestionTitle>11. Regularización</QuestionTitle>
+      <QuestionText>¿Tiene su situación regularizada en España (¨papeles¨)?</QuestionText>
+      <Answers>
+        <AnswerText index='0' value='0' adjacent='false'>Sí</AnswerText>
+        <AnswerText index='1' value='1' adjacent='false'>No</AnswerText>
+        <AnswerText index='2' value='2' adjacent='false'>No quiero contestar</AnswerText>
+      </Answers>
+    </Question>
+    <Question>
+      <!--ID : 1233047668968, type=EGO, Title : 22. Regalos origen text : ¿Cuántas veces envió bienes o regalos a ___________ en los dos últimos años?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233047668968</Id>
+      <QuestionType>1</QuestionType>
+      <AnswerType>1</AnswerType>
+      <QuestionTitle>22. Regalos origen</QuestionTitle>
+      <QuestionText>¿Cuántas veces envió bienes o regalos a ___________ en los dos últimos años?</QuestionText>
+      <Link>
+        <Id>1233047345796</Id>
+        <value>2</value>
+        <string>A menudo</string>
+      </Link>
+    </Question>
+    <Question>
+      <!--ID : 1233046536890, type=EGO, Title : 6. País padre text : ¿Dónde nació su padre?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233046536890</Id>
+      <QuestionType>1</QuestionType>
+      <AnswerType>0</AnswerType>
+      <QuestionTitle>6. País padre</QuestionTitle>
+      <QuestionText>¿Dónde nació su padre?</QuestionText>
+      <Answers>
+        <AnswerText index='0' value='0' adjacent='false'>España</AnswerText>
+        <AnswerText index='1' value='1' adjacent='false'>Filipinas</AnswerText>
+        <AnswerText index='2' value='2' adjacent='false'>Pakistán</AnswerText>
+        <AnswerText index='3' value='3' adjacent='false'>India</AnswerText>
+        <AnswerText index='4' value='4' adjacent='false'>China</AnswerText>
+        <AnswerText index='5' value='5' adjacent='false'>Otro</AnswerText>
+      </Answers>
+    </Question>
+    <Question>
+      <!--ID : 1233048625531, type=ALTER, Title : 29. Confidencia text : ¿Ha consultado alguna vez con $$ problemas o preocupaciones personales?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233048625531</Id>
+      <QuestionType>3</QuestionType>
+      <AnswerType>0</AnswerType>
+      <QuestionTitle>29. Confidencia</QuestionTitle>
+      <QuestionText>¿Ha consultado alguna vez con $$ problemas o preocupaciones personales?</QuestionText>
+      <Answers>
+        <AnswerText index='0' value='0' adjacent='false'>Nunca</AnswerText>
+        <AnswerText index='1' value='1' adjacent='false'>A veces</AnswerText>
+        <AnswerText index='2' value='2' adjacent='false'>A menudo</AnswerText>
+      </Answers>
+    </Question>
+    <Question>
+      <!--ID : 1233047345796, type=EGO, Title : 18. Remesas text : ¿Envía dinero a su país de origen?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233047345796</Id>
+      <QuestionType>1</QuestionType>
+      <AnswerType>0</AnswerType>
+      <QuestionTitle>18. Remesas</QuestionTitle>
+      <QuestionText>¿Envía dinero a su país de origen?</QuestionText>
+      <Answers>
+        <AnswerText index='0' value='0' adjacent='false'>Nunca</AnswerText>
+        <AnswerText index='1' value='1' adjacent='false'>A veces</AnswerText>
+        <AnswerText index='2' value='2' adjacent='false'>A menudo</AnswerText>
+      </Answers>
+    </Question>
+    <Question>
+      <!--ID : 1233048852562, type=ALTER_PAIR, Title : 32. Alter alter relación text : ¿Es probable que estas dos personas se relacionen independientemente de Usted?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233048852562</Id>
+      <QuestionType>4</QuestionType>
+      <AnswerType>0</AnswerType>
+      <QuestionTitle>32. Alter alter relación</QuestionTitle>
+      <QuestionText>¿Es probable que estas dos personas se relacionen independientemente de Usted?</QuestionText>
+      <Answers>
+        <AnswerText index='0' value='2' adjacent='true'>Muy probablemente</AnswerText>
+        <AnswerText index='1' value='1' adjacent='true'>Podría ser</AnswerText>
+        <AnswerText index='2' value='0' adjacent='false'>No es probable</AnswerText>
+      </Answers>
+    </Question>
+    <Question>
+      <!--ID : 1233045267984, type=EGO, Title : 1. Hombre-mujer text : ¿Es hombre o mujer?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233045267984</Id>
+      <QuestionType>1</QuestionType>
+      <AnswerType>0</AnswerType>
+      <QuestionTitle>1. Hombre-mujer</QuestionTitle>
+      <QuestionText>¿Es hombre o mujer?</QuestionText>
+      <Answers>
+        <AnswerText index='0' value='1' adjacent='false'>Hombre</AnswerText>
+        <AnswerText index='1' value='0' adjacent='false'>Mujeres</AnswerText>
+      </Answers>
+    </Question>
+    <Question>
+      <!--ID : 1233131650265, type=EGO, Title : 17. Países de la Unión Europea text : ¿En qué países ha vivido y por cuánto tiempo aproximadamente (pais, meses ...)?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233131650265</Id>
+      <QuestionType>1</QuestionType>
+      <AnswerType>2</AnswerType>
+      <QuestionTitle>17. Países de la Unión Europea</QuestionTitle>
+      <QuestionText>¿En qué países ha vivido y por cuánto tiempo aproximadamente (pais, meses ...)?</QuestionText>
+      <Link>
+        <Id>1233047305625</Id>
+        <value>0</value>
+        <string>Sí</string>
+      </Link>
+    </Question>
+    <Question>
+      <!--ID : 1233045918046, type=EGO, Title : 2. Edad text : ¿Cuál es su edad (en años)?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233045918046</Id>
+      <QuestionType>1</QuestionType>
+      <AnswerType>1</AnswerType>
+      <QuestionTitle>2. Edad</QuestionTitle>
+      <QuestionText>¿Cuál es su edad (en años)?</QuestionText>
+    </Question>
+    <Question>
+      <!--ID : 1233048247421, type=ALTER, Title : 26. País alter text : ¿De qué país es $$ originalmente?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233048247421</Id>
+      <QuestionType>3</QuestionType>
+      <AnswerType>2</AnswerType>
+      <QuestionTitle>26. País alter</QuestionTitle>
+      <QuestionText>¿De qué país es $$ originalmente?</QuestionText>
+    </Question>
+    <Question>
+      <!--ID : 1233046319734, type=EGO, Title : 5. Razones text : ¿Qué respuesta describe mejor sus razones para venir a España?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233046319734</Id>
+      <QuestionType>1</QuestionType>
+      <AnswerType>0</AnswerType>
+      <QuestionTitle>5. Razones</QuestionTitle>
+      <QuestionText>¿Qué respuesta describe mejor sus razones para venir a España?</QuestionText>
+      <Answers>
+        <AnswerText index='0' value='0' adjacent='false'>Conocía alguien aquí</AnswerText>
+        <AnswerText index='1' value='1' adjacent='false'>Pensé que podría encontrar trabajo</AnswerText>
+        <AnswerText index='2' value='2' adjacent='false'>Por negocios</AnswerText>
+        <AnswerText index='3' value='3' adjacent='false'>Sabía de España por la televisión (por ejemplo fútbol)</AnswerText>
+        <AnswerText index='4' value='4' adjacent='false'>Para estar con mi familia</AnswerText>
+        <AnswerText index='5' value='5' adjacent='false'>Nací aquí</AnswerText>
+        <AnswerText index='6' value='6' adjacent='false'>Otra</AnswerText>
+      </Answers>
+    </Question>
+    <Question>
+      <!--ID : 1233047406328, type=EGO, Title : 19. Uso remesas text : ¿Está usando parte de este dinero para construir una casa o poner un negocio en ...?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233047406328</Id>
+      <QuestionType>1</QuestionType>
+      <AnswerType>0</AnswerType>
+      <QuestionTitle>19. Uso remesas</QuestionTitle>
+      <QuestionText>¿Está usando parte de este dinero para construir una casa o poner un negocio en ...?</QuestionText>
+      <Answers>
+        <AnswerText index='0' value='0' adjacent='false'>Sí</AnswerText>
+        <AnswerText index='1' value='1' adjacent='false'>No</AnswerText>
+      </Answers>
+      <Link>
+        <Id>1233047345796</Id>
+        <value>2</value>
+        <string>A menudo</string>
+      </Link>
+    </Question>
+    <Question>
+      <!--ID : 1233048009250, type=ALTER, Title : 24. Alter-hombre-mujer text : ¿$$ es un hombre o una mujer?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233048009250</Id>
+      <QuestionType>3</QuestionType>
+      <AnswerType>0</AnswerType>
+      <QuestionTitle>24. Alter-hombre-mujer</QuestionTitle>
+      <QuestionText>¿$$ es un hombre o una mujer?</QuestionText>
+      <Answers>
+        <AnswerText index='0' value='0' adjacent='false'>Hombre</AnswerText>
+        <AnswerText index='1' value='1' adjacent='false'>Mujer</AnswerText>
+      </Answers>
+    </Question>
+    <Question>
+      <!--ID : 1233048601125, type=ALTER, Title : 28. Localidad residencia text : ¿De qué gran ciudad está más cerca $$?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233048601125</Id>
+      <QuestionType>3</QuestionType>
+      <AnswerType>2</AnswerType>
+      <QuestionTitle>28. Localidad residencia</QuestionTitle>
+      <QuestionText>¿De qué gran ciudad está más cerca $$?</QuestionText>
+    </Question>
+    <Question>
+      <!--ID : 1233047093625, type=EGO, Title : 13. Estudios text : ¿Qué categoría describe mejor su nivel de estudios?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233047093625</Id>
+      <QuestionType>1</QuestionType>
+      <AnswerType>0</AnswerType>
+      <QuestionTitle>13. Estudios</QuestionTitle>
+      <QuestionText>¿Qué categoría describe mejor su nivel de estudios?</QuestionText>
+      <Answers>
+        <AnswerText index='0' value='0' adjacent='false'>Sin estudios</AnswerText>
+        <AnswerText index='1' value='1' adjacent='false'>Estudios primarios</AnswerText>
+        <AnswerText index='2' value='2' adjacent='false'>Bachillerato o equivalente</AnswerText>
+        <AnswerText index='3' value='3' adjacent='false'>Estudios universitarios</AnswerText>
+        <AnswerText index='4' value='4' adjacent='false'>Postgrado o Master</AnswerText>
+        <AnswerText index='5' value='5' adjacent='false'>Escuela coránica</AnswerText>
+        <AnswerText index='6' value='6' adjacent='false'>Formación profesional</AnswerText>
+        <AnswerText index='7' value='7' adjacent='false'>Otra</AnswerText>
+      </Answers>
+    </Question>
+    <Question>
+      <!--ID : 1233048585015, type=ALTER, Title : 27. Residencia alter text : ¿En qué país vive $$?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233048585015</Id>
+      <QuestionType>3</QuestionType>
+      <AnswerType>2</AnswerType>
+      <QuestionTitle>27. Residencia alter</QuestionTitle>
+      <QuestionText>¿En qué país vive $$?</QuestionText>
+    </Question>
+    <Question>
+      <!--ID : 1233046773875, type=EGO, Title : 9. Hijos_as text : ¿Cuántos hijos tiene?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233046773875</Id>
+      <QuestionType>1</QuestionType>
+      <AnswerType>1</AnswerType>
+      <QuestionTitle>9. Hijos_as</QuestionTitle>
+      <QuestionText>¿Cuántos hijos tiene?</QuestionText>
+    </Question>
+    <Question>
+      <!--ID : 1233046874093, type=EGO, Title : 10. Situación laboral text : ¿Es Usted asalariado a tiempo completo, a tiempo parcial, está parado, jubilado u otra situación?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233046874093</Id>
+      <QuestionType>1</QuestionType>
+      <AnswerType>0</AnswerType>
+      <QuestionTitle>10. Situación laboral</QuestionTitle>
+      <QuestionText>¿Es Usted asalariado a tiempo completo, a tiempo parcial, está parado, jubilado u otra situación?</QuestionText>
+      <Answers>
+        <AnswerText index='0' value='0' adjacent='false'>Contrato a tiempo completo</AnswerText>
+        <AnswerText index='1' value='1' adjacent='false'>Tiempo parcial</AnswerText>
+        <AnswerText index='2' value='2' adjacent='false'>Desempleado_a</AnswerText>
+        <AnswerText index='3' value='3' adjacent='false'>Autónomo_a por cuenta ajena</AnswerText>
+        <AnswerText index='4' value='4' adjacent='false'>Empresario_a</AnswerText>
+        <AnswerText index='5' value='5' adjacent='false'>Trabajo por temporada</AnswerText>
+        <AnswerText index='6' value='6' adjacent='false'>Otra situación</AnswerText>
+      </Answers>
+    </Question>
+    <Question>
+      <!--ID : 1233046068421, type=EGO, Title : 4. Religión text : ¿Qué categoría describe mejor su religión?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233046068421</Id>
+      <QuestionType>1</QuestionType>
+      <AnswerType>0</AnswerType>
+      <QuestionTitle>4. Religión</QuestionTitle>
+      <QuestionText>¿Qué categoría describe mejor su religión?</QuestionText>
+      <Answers>
+        <AnswerText index='0' value='0' adjacent='false'>Musulmana</AnswerText>
+        <AnswerText index='1' value='1' adjacent='false'>Católica</AnswerText>
+        <AnswerText index='2' value='2' adjacent='false'>Evangélica</AnswerText>
+        <AnswerText index='3' value='3' adjacent='false'>Sin religión</AnswerText>
+        <AnswerText index='4' value='4' adjacent='false'>Sikh</AnswerText>
+        <AnswerText index='5' value='6' adjacent='false'>Otra</AnswerText>
+        <AnswerText index='6' value='5' adjacent='false'>Confucionismo</AnswerText>
+      </Answers>
+    </Question>
+    <Question>
+      <!--ID : 1233047518031, type=EGO, Title : 20. Familia en origen text : ¿Su familia en _________________ depende de sus envíos de dinero para vivir?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233047518031</Id>
+      <QuestionType>1</QuestionType>
+      <AnswerType>0</AnswerType>
+      <QuestionTitle>20. Familia en origen</QuestionTitle>
+      <QuestionText>¿Su familia en _________________ depende de sus envíos de dinero para vivir?</QuestionText>
+      <Answers>
+        <AnswerText index='0' value='0' adjacent='false'>Sí</AnswerText>
+        <AnswerText index='1' value='1' adjacent='false'>No</AnswerText>
+      </Answers>
+      <Link>
+        <Id>1233047345796</Id>
+        <value>2</value>
+        <string>A menudo</string>
+      </Link>
+    </Question>
+    <Question>
+      <!--ID : 1233047305625, type=EGO, Title : 16. Unión Europea text : ¿Ha vivido en otros países de la Unión Europea?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233047305625</Id>
+      <QuestionType>1</QuestionType>
+      <AnswerType>0</AnswerType>
+      <QuestionTitle>16. Unión Europea</QuestionTitle>
+      <QuestionText>¿Ha vivido en otros países de la Unión Europea?</QuestionText>
+      <Answers>
+        <AnswerText index='0' value='0' adjacent='false'>Sí</AnswerText>
+        <AnswerText index='1' value='1' adjacent='false'>No</AnswerText>
+      </Answers>
+    </Question>
+    <Question>
+      <!--ID : 1233047563390, type=EGO, Title : 21. Receptor remesas text : ¿Quién recibe el dinero que envía?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233047563390</Id>
+      <QuestionType>1</QuestionType>
+      <AnswerType>0</AnswerType>
+      <QuestionTitle>21. Receptor remesas</QuestionTitle>
+      <QuestionText>¿Quién recibe el dinero que envía?</QuestionText>
+      <Answers>
+        <AnswerText index='0' value='0' adjacent='false'>Esposo_a</AnswerText>
+        <AnswerText index='1' value='1' adjacent='false'>Madre o Padre</AnswerText>
+        <AnswerText index='2' value='2' adjacent='false'>Hijo_hija</AnswerText>
+        <AnswerText index='3' value='3' adjacent='false'>Hermano o hermana</AnswerText>
+        <AnswerText index='4' value='4' adjacent='false'>Otro familiar</AnswerText>
+        <AnswerText index='5' value='5' adjacent='false'>Amigo_a</AnswerText>
+        <AnswerText index='6' value='6' adjacent='false'>Gestor</AnswerText>
+        <AnswerText index='7' value='7' adjacent='false'>Otro</AnswerText>
+      </Answers>
+      <Link>
+        <Id>1233047345796</Id>
+        <value>2</value>
+        <string>A menudo</string>
+      </Link>
+    </Question>
+    <Question>
+      <!--ID : 1233047253234, type=EGO, Title : 14. Tiempo residencia text : ¿En qué año (YYYY) vino por primera vez a España (0 para los nacidos aquí)?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233047253234</Id>
+      <QuestionType>1</QuestionType>
+      <AnswerType>2</AnswerType>
+      <QuestionTitle>14. Tiempo residencia</QuestionTitle>
+      <QuestionText>¿En qué año (YYYY) vino por primera vez a España (0 para los nacidos aquí)?</QuestionText>
+    </Question>
+    <Question>
+      <!--ID : 1233045938375, type=EGO, Title : 3. País text : ¿En qué país nació?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233045938375</Id>
+      <QuestionType>1</QuestionType>
+      <AnswerType>0</AnswerType>
+      <QuestionTitle>3. País</QuestionTitle>
+      <QuestionText>¿En qué país nació?</QuestionText>
+      <Answers>
+        <AnswerText index='0' value='0' adjacent='false'>España</AnswerText>
+        <AnswerText index='1' value='1' adjacent='false'>Filipinas</AnswerText>
+        <AnswerText index='2' value='2' adjacent='false'>Pakistán</AnswerText>
+        <AnswerText index='3' value='3' adjacent='false'>India</AnswerText>
+        <AnswerText index='4' value='4' adjacent='false'>China</AnswerText>
+        <AnswerText index='5' value='5' adjacent='false'>Otro</AnswerText>
+      </Answers>
+    </Question>
+    <Question>
+      <!--ID : 1233046678921, type=EGO, Title : 8. Estado civil text : ¿Cuál es su estado civil?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233046678921</Id>
+      <QuestionType>1</QuestionType>
+      <AnswerType>0</AnswerType>
+      <QuestionTitle>8. Estado civil</QuestionTitle>
+      <QuestionText>¿Cuál es su estado civil?</QuestionText>
+      <Answers>
+        <AnswerText index='0' value='0' adjacent='false'>Soltero_a</AnswerText>
+        <AnswerText index='1' value='1' adjacent='false'>Casado_a</AnswerText>
+        <AnswerText index='2' value='2' adjacent='false'>Divorciado_a</AnswerText>
+        <AnswerText index='3' value='3' adjacent='false'>Viudo_a</AnswerText>
+        <AnswerText index='4' value='4' adjacent='false'>Separado_a</AnswerText>
+        <AnswerText index='5' value='5' adjacent='false'>Pareja de hecho</AnswerText>
+      </Answers>
+    </Question>
+    <Question>
+      <!--ID : 1233046660015, type=EGO, Title : 7. País madre text : ¿Dónde nació su madre?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233046660015</Id>
+      <QuestionType>1</QuestionType>
+      <AnswerType>0</AnswerType>
+      <QuestionTitle>7. País madre</QuestionTitle>
+      <QuestionText>¿Dónde nació su madre?</QuestionText>
+      <Answers>
+        <AnswerText index='0' value='0' adjacent='false'>España</AnswerText>
+        <AnswerText index='1' value='1' adjacent='false'>Filipinas</AnswerText>
+        <AnswerText index='2' value='2' adjacent='false'>Pakistán</AnswerText>
+        <AnswerText index='3' value='3' adjacent='false'>India</AnswerText>
+        <AnswerText index='4' value='4' adjacent='false'>China</AnswerText>
+        <AnswerText index='5' value='5' adjacent='false'>Otro</AnswerText>
+      </Answers>
+    </Question>
+    <Question>
+      <!--ID : 1233047085359, type=EGO, Title : 12. Actividad text : ¿Qué tipo de trabajo hace?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233047085359</Id>
+      <QuestionType>1</QuestionType>
+      <AnswerType>2</AnswerType>
+      <QuestionTitle>12. Actividad</QuestionTitle>
+      <QuestionText>¿Qué tipo de trabajo hace?</QuestionText>
+    </Question>
+    <Question>
+      <!--ID : 1233048420484, type=ALTER, Title : 30. Razón encuentro text : ¿Cómo es que conoce a $$?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233048420484</Id>
+      <QuestionType>3</QuestionType>
+      <AnswerType>0</AnswerType>
+      <QuestionTitle>30. Razón encuentro</QuestionTitle>
+      <QuestionText>¿Cómo es que conoce a $$?</QuestionText>
+      <Answers>
+        <AnswerText index='0' value='0' adjacent='false'>Esposa/o - Pareja</AnswerText>
+        <AnswerText index='1' value='1' adjacent='false'>Familiar por descendencia (consanguíneos)</AnswerText>
+        <AnswerText index='2' value='2' adjacent='false'>Familiar por matrimonio (familia política)</AnswerText>
+        <AnswerText index='3' value='3' adjacent='false'>Alguien con quien trabaja</AnswerText>
+        <AnswerText index='4' value='4' adjacent='false'>Vecino/a</AnswerText>
+        <AnswerText index='5' value='5' adjacent='false'>Alguien que conoció a través de alguna asociación o club</AnswerText>
+        <AnswerText index='6' value='6' adjacent='false'>Alguien con el que se encuentra en la iglesia o centro de culto</AnswerText>
+        <AnswerText index='7' value='7' adjacent='false'>Alguien con el que se encuentra a causa de una tercera persona</AnswerText>
+        <AnswerText index='8' value='8' adjacent='false'>Escuela</AnswerText>
+        <AnswerText index='9' value='9' adjacent='false'>Desde la juventud</AnswerText>
+        <AnswerText index='10' value='10' adjacent='false'>Otra</AnswerText>
+      </Answers>
+    </Question>
+    <Question>
+      <!--ID : 1233047292203, type=EGO, Title : 15. Visitas text : ¿Cuántas veces en los dos últimos años ha visitado (país de origen)?
+Answer : questionId=-1, answered=false, string=, index=0, value=-1-->
+      <Id>1233047292203</Id>
+      <QuestionType>1</QuestionType>
+      <AnswerType>1</AnswerType>
+      <QuestionTitle>15. Visitas</QuestionTitle>
+      <QuestionText>¿Cuántas veces en los dos últimos años ha visitado (país de origen)?</QuestionText>
+    </Question>
+  </QuestionList>
+</Package>

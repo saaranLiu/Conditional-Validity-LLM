@@ -1,0 +1,340 @@
+Bibliography
+UC Berkeley Social Networks Study (UCNets), San Francisco Bay Area, 2015-
+2018
+
+This bibliography includes published and unpublished works that are related 
+to ICPSR study 36975. It includes works that are based on primary
+or secondary analysis of the data, or which describe or critique those
+data or the collection methodology. 
+
+If you publish a work or know of other works that are based on these data,
+please send the complete citation and name of the ICPSR study used to:
+icpsrbibliography@umich.edu
+
+
+1. Bilecen, Basak; Vacca, Raffaele, "The isolation paradox: A comparative
+study of social support and health across migrant generations in the U.S.."
+Social Science and Medicine. Aug 2021, 283, (114204),. DOI:
+10.1016/j.socscimed.2021.114204
+
+2. Child, Stephanie, "Childhood Adversity and Adult Personal Network
+Characteristics." Presented at the 2019 Annual Meeting of the American
+Public Health Association, American Public Health Association,
+Philadelphia, PA, Nov 2-6, 2019.
+Abstract: https://apha.confex.com/apha/2019/meetingapp.cgi/Paper/438696
+
+3. Child, Stephanie, "Differences in Ego-Network Characteristics Following
+Recent Health Shocks." Presented at the American Public Health Association
+145th Annual Conference, American Public Health Association, Atlanta, GA,
+Nov 4-8, 2017.
+Abstract: https://apha.confex.com/apha/2017/meetingapp.cgi/Paper/377166
+
+4. Child, Stephanie T.; Fischer, Claude; Lawton, Leora, "Loneliness Among
+Young and Mid-to-Late Age Adults: Do Network Characteristics and Social
+Participation Matter and for Whom?." Presented at the Population
+Association of America 2017 Annual Meeting, Population Association of
+America (PAA), Chicago, IL, Apr 27-29, 2017. 199-4
+Abstract: https://paa.confex.com/paa/2017/meetingapp.cgi/Paper/16675
+
+5. Child, Stephanie T.; Lawton, Leora E., "Personal networks and
+associations with psychological distress among young and older adults."
+Social Science and Medicine. Feb 2020, 246, (112714),. DOI:
+10.1016/j.socscimed.2019.112714
+Abstract: https://paa.confex.com/paa/2017/meetingapp.cgi/Paper/16675
+
+6. Child, Stephanie T.; Ruppel, Emily H.; Albert, Michelle A.; Lawton,
+Leora, "Network support and negative life events associated with chronic
+cardiometabolic disease outcomes." American Journal of Preventive Medicine.
+2022, 62, (1), e21 - e28. DOI: 10.1016/j.amepre.2021.06.022
+Abstract: https://paa.confex.com/paa/2017/meetingapp.cgi/Paper/16675
+
+7. Child, Stephanie; Lawton, Leora, "Loneliness and social isolation among
+young and late middle-age adults: Associations with personal networks and
+social participation." Aging and Mental Health. 2019, 23, (2), 196 - 204.
+DOI: 10.1080/13607863.2017.1399345
+Abstract: https://paa.confex.com/paa/2017/meetingapp.cgi/Paper/16675
+
+8. Child, Stephanie; Ruppel, Emily H.; Zhong, Mia; Lawton, Leora, "Direct
+and moderating causal effects of network support on sleep quality: Findings
+from the UC Berkeley Social Network Study." Annals of Behavioral Medicine.
+May 2021, 55, (5), 446 - 459. DOI: 10.1093/abm/kaaa082
+Abstract: https://paa.confex.com/paa/2017/meetingapp.cgi/Paper/16675
+
+9. Child, Stephanie; Ruppel, Emily H.; Zhong, Mia; Lawton, Leora, "Erratum
+to: Direct and moderating causal effects of network support on sleep
+quality: Findings from the UC Berkeley Social Network Study." Annals of
+Behavioral Medicine. May 2021, 55, (5), 503 - 504. DOI: 10.1093/abm/kaaa106
+Abstract: https://paa.confex.com/paa/2017/meetingapp.cgi/Paper/16675
+
+10. Cofie, Leslie E.; Hirth, Jacqueline M.; Lee, Joseph G.L., "Social
+support networks and foreign-birth status associated with obesity,
+hypertension and diabetes prevalence among 21-30 and 50-70 year old adults
+living in the San Francisco Bay Area." American Journal of Health
+Promotion. Nov 2021, 35, (8), 1105 - 1113. DOI: 10.1177/08901171211016320
+Abstract: https://paa.confex.com/paa/2017/meetingapp.cgi/Paper/16675
+
+11. Cofie, Leslie; Hirth, Jacqueline, "Chronic Conditions Associated with
+Social Support Networks and Foreign-birth Status." Presented at the 2019
+Annual Meeting of the American Public Health Association, American Public
+Health Association, Philadelphia, PA, Nov 2-6, 2019.
+Abstract: https://apha.confex.com/apha/2019/meetingapp.cgi/Paper/443835
+
+12. Demir-Dagdas, Tuba; Child, Stephanie T., "Religious affiliation,
+informal participation, and network support associated with substance use:
+Differences across age groups." Health Education and Behavior. Aug 2019,
+46, (4), 656 - 665. DOI: 10.1177/1090198119826259
+Abstract: https://apha.confex.com/apha/2019/meetingapp.cgi/Paper/443835
+
+13. Dubash, Soli D.; Schafer, Markus H., "Social network negativity and
+physical activity: New longitudinal evidence for young and older adults
+2015-2018." Research Quarterly for Exercise and Sport. Jun 2024, 95, (2),
+334 - 341. DOI: 10.1080/02701367.2023.2205910
+Abstract: https://apha.confex.com/apha/2019/meetingapp.cgi/Paper/443835
+
+14. Facciani, Matthew; McKay, Tara, "Network loss following the 2016
+Presidential Election among LGBTQ+ adults." Applied Network Science. 2022,
+7, (41),. DOI: 10.1007/s41109-022-00474-y
+Abstract: https://apha.confex.com/apha/2019/meetingapp.cgi/Paper/443835
+
+15. Fischer, Claude, "Personality and Contexts in Tie Formation." Presented
+at the American Sociological Association 111th Annual Meeting, American
+Sociological Association, Seattle, WA, Aug 20-23, 2016.
+Abstract: https://convention2.allacademic.com/one/asa/asa16/index.php?cmd=Online+Program+View+Paper&selected_paper_id=1122900&PHPSESSID=3m1kloj9c4tvt0rseqkdmbesau
+
+16. Fischer, Claude S.; Bayham, Lindsay, "Mode and interviewer effects in
+egocentric network research." Field Methods. August 1, 2019, 31, (3), 195 -
+213. DOI: 10.1177/1525822X19861321
+Abstract: https://convention2.allacademic.com/one/asa/asa16/index.php?cmd=Online+Program+View+Paper&selected_paper_id=1122900&PHPSESSID=3m1kloj9c4tvt0rseqkdmbesau
+
+17. Fischer, Claude S.; Offer, Shira, "Who is Dropped and Why?
+Methodological and Substantive Accounts for Network Loss." Presented at the
+XXXIX Sunbelt Social Networks Conference, International Network for Social
+Network Analysis (INSNA), Montreal, Canada, Jun 18-23, 2019.
+Abstract: https://convention2.allacademic.com/one/asa/asa16/index.php?cmd=Online+Program+View+Paper&selected_paper_id=1122900&PHPSESSID=3m1kloj9c4tvt0rseqkdmbesau
+
+18. Fischer, Claude S.; Offer, Shira, "Who is dropped and why?
+Methodological and substantive accounts for network loss." Social Networks.
+May 2020, 61, 78 - 86. DOI: 10.1016/j.socnet.2019.08.008
+Abstract: https://convention2.allacademic.com/one/asa/asa16/index.php?cmd=Online+Program+View+Paper&selected_paper_id=1122900&PHPSESSID=3m1kloj9c4tvt0rseqkdmbesau
+
+19. Fischer, Claude; Durham, Xavier, "Forms of group involvement:
+Alternatives to the standard question." Sociological Perspectives. Aug
+2022, 65, (4), 661 - 683. DOI: 10.1177/07311214211046561
+Abstract: https://convention2.allacademic.com/one/asa/asa16/index.php?cmd=Online+Program+View+Paper&selected_paper_id=1122900&PHPSESSID=3m1kloj9c4tvt0rseqkdmbesau
+
+20. Giannella, Eric Romualdo, "Personal Networks and Social Change in
+Northern California from 1977 to 2015." Dissertation, University of
+California, Berkeley, 2016.
+Full text: https://escholarship.org/uc/item/5qd5b2s9
+
+21. Grayshaw, Patrick D., "Community Context, Social Networks, and ACEs:
+Impacts on Health." Dissertation, Oklahoma State University, 2021.
+Abstract: https://shareok.org/handle/11244/338888
+
+22. Kim, Hye Jee; Saperstein, Aliya, "'You’re Supposed to Say White':
+Epistemic ambiguity and ethnoracial classification." Sociology of Race and
+Ethnicity. in press 2025,. DOI: 10.1177/23326492251386475
+Abstract: https://shareok.org/handle/11244/338888
+
+23. Kyeremeh, Emmanuel; Schafer, Markus H., "Keep around, drop, or revise?
+Exploring what becomes of difficult ties in personal networks." Social
+Networks. Jan 2024, 76, 22 - 33. DOI: 10.1016/j.socnet.2023.06.001
+Abstract: https://shareok.org/handle/11244/338888
+
+24. Lawton, Leora; Wilson, Willis, "Comparing Facebook and Address-Based
+Sampling to Recruit Young Adults." Presented at the American Association of
+Public Opinion Research (AAPOR) 73rd Annual Meeting, American Association
+of Public Opinion Research (AAPOR), Denver, CO, May 16-19, 2018.
+Abstract: http://app.core-apps.com/aapor_2018/abstract/8e145a3f-674c-4853-aa7b-84f83e420ed1
+
+25. Lee, Keunbok, "A Tie-Centered Approach for Ego-Centric Social Network
+Studies." Dissertation, University of California, Berkeley, 2019.
+Abstract: http://app.core-apps.com/aapor_2018/abstract/8e145a3f-674c-4853-aa7b-84f83e420ed1
+
+26. Lee, Keunbok, "Different discussion partners and their effect on
+depression among older adults." Social Sciences. 2021, 10, (6), 215. DOI:
+10.3390/socsci10060215
+Abstract: http://app.core-apps.com/aapor_2018/abstract/8e145a3f-674c-4853-aa7b-84f83e420ed1
+
+27. Lee, Keunbok, "Multiple types of friends and life stage differences in
+friendship." Social Networks. Oct 2022, 71, 32 - 48. DOI:
+10.1016/j.socnet.2022.06.001
+Abstract: http://app.core-apps.com/aapor_2018/abstract/8e145a3f-674c-4853-aa7b-84f83e420ed1
+
+28. Lee, Keunbok, "Multiplexity of Personal Networks and Well-being."
+Presented at the XXXVII Sunbelt Conference, International Network for
+Social Network Analysis, Beijing, China, May 30-Jun 4, 2017. 460
+Abstract: http://app.core-apps.com/aapor_2018/abstract/8e145a3f-674c-4853-aa7b-84f83e420ed1
+
+29. Lee, Keunbok, "Who Gets Advice on Weight Loss from Physicians? Network
+Effects on Receiving Advice on Weight Loss." Presented at the XXXVII
+Sunbelt Conference, International Network for Social Network Analysis,
+Beijing, China, May 30-Jun 4, 2017. 436
+Abstract: http://app.core-apps.com/aapor_2018/abstract/8e145a3f-674c-4853-aa7b-84f83e420ed1
+
+30. Lin, Xin Yao, "Social Technology Use and Well-Being: The Role of Social
+Support and Physical Activity." Dissertation, Brandeis University, 2022.
+Full text: https://www.proquest.com/docview/2724622282/6B1CF9966F424EF6PQ?accountid=14667
+
+31. Lin, Xin Yao; Lachman, Margie E., "Diversity of network communication
+mode and interpersonal interactions: Relationship with social support and
+well-being." Journal of Social and Personal Relationships. Oct 2023, 40,
+(10), 3367 - 3391. DOI: 10.1177/02654075231173928
+Full text: https://www.proquest.com/docview/2724622282/6B1CF9966F424EF6PQ?accountid=14667
+
+32. Matsumoto, Cynthia Glory, "Social Networks and Health of Sexual and
+Gender Minorities." Dissertation, University of California, Davis, 2020.
+Full text: https://www.proquest.com/docview/2724622282/6B1CF9966F424EF6PQ?accountid=14667
+
+33. Mattingly, Kelsey N., "Parental divorce and social support networks in
+younger and older adults: Extending modes of biographical disruption." In
+Aging and the Family: Understanding Changes in Structural and Relationship
+Dynamics. Contemporary Perspectives in Family Research. 229 - 246, Bingley,
+UK: Emerald Publishing Limited,2021. DOI: 10.1108/S1530-353520210000017012
+Full text: https://www.proquest.com/docview/2724622282/6B1CF9966F424EF6PQ?accountid=14667
+
+34. McKay, Tara, "Social Networks and Health among Older LGBT Adults in the
+San Francisco Bay Area." Presented at the Population Association of America
+2017 Annual Meeting, Population Association of America (PAA), Chicago, IL,
+Apr 27-29, 2017. 43-1
+Full text: https://paa.confex.com/paa/2017/meetingapp.cgi/Paper/11753
+
+35. McKay, Tara; Tran, Nathaniel; Trautman, Lana; Clark, Kirsty, "LGBTQ-
+Related Discrimination Reduces Sleep Quality in Older Adults: Evidence from
+VUSNAPS and UCNets." Presented at the Gerontological Society of America
+(GSA) 2023 Annual Scientific Meeting, Gerontological Society of America
+(GSA), Tampa, FL, Nov 8-12, 2023. DOI: 10.1093/geroni/igad104.0184
+Full text: https://paa.confex.com/paa/2017/meetingapp.cgi/Paper/11753
+
+36. McNally, James W.; Lavender, Kathryn M.; Levenstein, Margaret C., "Best
+Practices for Measuring the Social, Behavioral, and Economic Impact of
+Epidemics." ICPSR Working Paper. 2, Ann Arbor, MI: Inter-university
+Consortium for Political and Social Research (ICPSR), Apr 2020.
+Abstract: https://hdl.handle.net/2027.42/154682
+
+37. Moorman, Sara M., "Age integration in the social convoys of young and
+late midlife adults." Advances in Life Course Research. Jun 2023, 56,
+100540. DOI: 10.1016/j.alcr.2023.100540
+Abstract: https://hdl.handle.net/2027.42/154682
+
+38. Offer, Shira, "They drive me crazy: Difficult social ties and
+subjective well-being." Journal of Health and Social Behavior. Dec 2020,
+61, (4), 418 - 436. DOI: 10.1177/0022146520952767
+Abstract: https://hdl.handle.net/2027.42/154682
+
+39. Offer, Shira; Fischer, Claude, "Difficult people: Who is perceived to
+be demanding in personal networks and why are they there?." American
+Sociological Review. Feb 2018, 83, (1), 111 - 142. DOI:
+10.1177/0003122417737951
+Abstract: https://hdl.handle.net/2027.42/154682
+
+40. Offer, Shira; Fischer, Claude S., "Calling on kin: The place of parents
+and adult children in egocentric networks." In Alwin, Duane F.; Felmlee,
+Diane H.; Kreager, Derek A., Social Networks and the Life Course:
+Integrating the Development of Human Lives and Social Relational Networks.
+Frontiers in Sociology and Social Research. 117 - 138, Cham, Switzerland:
+Springer International Publishing,2018. DOI: 10.1007/978-3-319-71544-5_6
+Abstract: https://hdl.handle.net/2027.42/154682
+
+41. Offer, Shira; Fischer, Claude S., "How new is 'New'? Who gets added in
+a panel study of personal networks?." Social Networks. 2022, 70, 284 - 294.
+DOI: 10.1016/j.socnet.2022.02.011
+Abstract: https://hdl.handle.net/2027.42/154682
+
+42. Offer, Shira; Fischer, Claude S., "They Drive Me Crazy: Difficult
+Social Ties and Subjective Well-Being." Presented at the 114th American
+Sociological Association Annual Meeting, American Sociological Association,
+New York, NY, Aug 10-13, 2019.
+Abstract: https://convention2.allacademic.com/one/asa/asa19/index.php?cmd=Online+Program+View+Paper&selected_paper_id=1512731&PHPSESSID=k0vtvnskoesj4nrf0hmj54rshq
+
+43. Oleskiewicz, Danielle, "Substitution and Compensation Among Widowed and
+Divorced Older Adults: The Role of Perceived Need for Support and
+Companionship." Dissertation, University of California, Irvine, 2024.
+Full text: https://www.proquest.com/dissertations-theses/substitution-compensation-among-widowed-divorced/docview/3087856377/se-2?accountid=14667
+
+44. Pachucki, Mark C.; Paik, Anthony, "Diversity and Disconnectedness in
+Personal Networks: Embracing Difference in a Politically Polarized Age."
+Presented at the 114th American Sociological Association Annual Meeting,
+American Sociological Association, New York, NY, Aug 10-13, 2019.
+Abstract: https://convention2.allacademic.com/one/asa/asa19/index.php?cmd=Online+Program+View+Paper&selected_paper_id=1515270&PHPSESSID=pt64kuh0fifo6n4amms6qbrgr0
+
+45. Pachucki, Mark; Paik, Anthony, "Defriending: Personal Networks in a
+Politically Polarized Age." Presented at the XXXIX Sunbelt Social Networks
+Conference, International Network for Social Network Analysis (INSNA),
+Montreal, Canada, Jun 18-23, 2019.
+Abstract: https://convention2.allacademic.com/one/asa/asa19/index.php?cmd=Online+Program+View+Paper&selected_paper_id=1515270&PHPSESSID=pt64kuh0fifo6n4amms6qbrgr0
+
+46. Pachucki, Mark; Paik, Anthony, "Diversity and Disconnectedness in
+Personal Networks: The Promise and Peril of Embracing Difference in a
+Politically Polarized Age." Presented at the XXXIX Sunbelt Social Networks
+Conference, International Network for Social Network Analysis (INSNA),
+Montreal, Canada, Jun 18-23, 2019.
+Abstract: https://convention2.allacademic.com/one/asa/asa19/index.php?cmd=Online+Program+View+Paper&selected_paper_id=1515270&PHPSESSID=pt64kuh0fifo6n4amms6qbrgr0
+
+47. Paik, Anthony; Pachucki, Mark C.; Tu, Hsin Fei, "'Defriending' in a
+polarized age: Political and racial homophily and tie dissolution." Social
+Networks. Jul 2023, 74, 31 - 41. DOI: 10.1016/j.socnet.2023.01.006
+Abstract: https://convention2.allacademic.com/one/asa/asa19/index.php?cmd=Online+Program+View+Paper&selected_paper_id=1515270&PHPSESSID=pt64kuh0fifo6n4amms6qbrgr0
+
+48. Qin, Jiaqi; Meng, Jingbo, "Support network typology and psychological
+well-being among young adults." Health Communication. Oct 2025, 40, (12),
+2745 - 2757. DOI: 10.1080/10410236.2025.2480684
+Abstract: https://convention2.allacademic.com/one/asa/asa19/index.php?cmd=Online+Program+View+Paper&selected_paper_id=1515270&PHPSESSID=pt64kuh0fifo6n4amms6qbrgr0
+
+49. Ruppel, Emily H.; Child, Stephanie; Fischer, Claude S.; Botchway,
+Marian, "Causal relationships between personal networks and health: A
+comparison of three modeling strategies." Journal of Health and Social
+Behavior. Sep 2022, 63, (3), 392 - 409. DOI: 10.1177/00221465211072310
+Abstract: https://convention2.allacademic.com/one/asa/asa19/index.php?cmd=Online+Program+View+Paper&selected_paper_id=1515270&PHPSESSID=pt64kuh0fifo6n4amms6qbrgr0
+
+50. Ruppel, Emily H.; Child, Stephanie; Fischer, Claude S.; Botchway,
+Marian, "Distinct aspects of human connection associated with subjective
+well-being." SSM - Mental Health. Dec 2022, 2, (100143),. DOI:
+10.1016/j.ssmmh.2022.100143
+Abstract: https://convention2.allacademic.com/one/asa/asa19/index.php?cmd=Online+Program+View+Paper&selected_paper_id=1515270&PHPSESSID=pt64kuh0fifo6n4amms6qbrgr0
+
+51. Ruppel, Emily; Child, Stephanie, "Effects of Social Support on Self-
+Rated Health: Causal Findings from the UC Berkeley Social Networks Panel
+Study." Presented at the 2019 Annual Meeting of the American Public Health
+Association, American Public Health Association, Philadelphia, PA, Nov 2-6,
+2019.
+Abstract: https://apha.confex.com/apha/2019/meetingapp.cgi/Paper/441085
+
+52. Soria, Chris, "An Empirical Investigation into the Utility of Large
+Language Models in Open-Ended Survey Data Categorization." SocArXiv, Oct
+14, 2025.. DOI: 10.31235/osf.io/wv6tk_v5
+Full text: https://osf.io/preprints/socarxiv/wv6tk_v5
+
+53. Soria, Chris, "Scaling Open-Ended Survey Coding: An LLM Pipeline Where
+Definitions Do the Heavy Lifting." SocArXiv, Mar 2026.. DOI:
+10.31235/osf.io/gjvcf_v1
+Full text: https://osf.io/preprints/socarxiv/wv6tk_v5
+
+54. Soria, Christopher; Lawton, Leora, "Connecting fathers: Fathers' impact
+on adult children's social networks." International Journal of Aging and
+Human Development. 2022, 96, (1), 19 - 32. DOI: 10.1177/00914150221106645
+Full text: https://osf.io/preprints/socarxiv/wv6tk_v5
+
+55. Vacca, Raffaele, "Structure in personal networks: Constructing and
+comparing typologies." Network Science. Jun 2020, 8, (2), 142 - 167. DOI:
+10.1017/nws.2019.29
+Full text: https://osf.io/preprints/socarxiv/wv6tk_v5
+
+56. Vacca, Raffaele; Bilecen, Basak, "The Isolation Paradox: A Comparative
+Study of Social Support among Migrants and Natives." Presented at the 114th
+American Sociological Association Annual Meeting, American Sociological
+Association, New York, NY, Aug 10-13, 2019.
+Abstract: https://convention2.allacademic.com/one/asa/asa19/index.php?cmd=Online+Program+View+Paper&selected_paper_id=1516466&PHPSESSID=pt64kuh0fifo6n4amms6qbrgr0
+
+57. Weiss, Jordan; Lawton, Leora E.; Fischer, Claude S., "Life course
+transitions and changes in network ties among younger and older adults."
+Advances in Life Course Research. Jun 2022, 52, (100478),. DOI:
+10.1016/j.alcr.2022.100478
+Abstract: https://convention2.allacademic.com/one/asa/asa19/index.php?cmd=Online+Program+View+Paper&selected_paper_id=1516466&PHPSESSID=pt64kuh0fifo6n4amms6qbrgr0
+
+58. Zhong, Mia Ruijie; Fischer, Claude S., "Being Single with Many Friends:
+Trade-off between Close Non-kin and Spousal Ties in Social Support."
+Presented at the XXXIX Sunbelt Social Networks Conference, International
+Network for Social Network Analysis (INSNA), Montreal, Canada, Jun 18-23,
+2019.
+Abstract: https://convention2.allacademic.com/one/asa/asa19/index.php?cmd=Online+Program+View+Paper&selected_paper_id=1516466&PHPSESSID=pt64kuh0fifo6n4amms6qbrgr0
