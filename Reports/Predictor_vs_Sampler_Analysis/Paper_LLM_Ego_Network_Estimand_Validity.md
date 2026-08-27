@@ -105,7 +105,7 @@ Predictor: X,B ──► 检索典型模板 g(X,B) ──► Y_L ≈ g+ε  （g 
 | **T6** 跨总体 | — | ISSP T6；GSS85↔04；NSHAP↔UCNets；GSS24 | ✅ | ✅ |
 | **Decoding** | — | GSS85 同性别/闭合；UCNets size | —（仅 llama HF） | ✅ |
 
-**脚本：** State `evaluate_state_eval{1,2,3}.py`；Network `evaluate_network.py`；T4 `evaluate_t4.py`；T6 `evaluate_t6.py`；Decoding `Testing/decoding/scripts/`。批量入口：`Testing/scripts/run_model_evaluation.sh`。
+**脚本：** State `T1_association/scripts/evaluate_state_eval{1,2,3}.py`；Network `T1_association/scripts/evaluate_network.py`；T4 `T4_individual_resample/scripts/evaluate_t4.py`；T6 `T6_cross_population/scripts/evaluate_t6.py`。批量入口：`Testing/common/run_model_evaluation.sh`。
 
 ### 3.2 T3 靶量
 
@@ -530,7 +530,7 @@ T4 把改进杠杆明确指向调制层与联合实现层所在的 Network 生�
 | `Testing/decoding/output/main/combined_analysis.json` | 四分片合并、paired bootstrap、native/full 耦合与稳健性分析 |
 | `Testing/decoding/temp/` | 已替换的旧 A/B/C forced-choice 脚本、输入与结果 |
 | `Reports/EXPERIMENT_REGISTRY.md` | 登记与分箱细节 |
-| `Testing/scripts/run_model_evaluation.sh` | 五模型批量评估 |
+| `Testing/common/run_model_evaluation.sh` | 五模型批量评估 |
 
 ## 附录 B：臂名速查
 
