@@ -105,7 +105,7 @@ Predictor: X,B ──► 检索典型模板 g(X,B) ──► Y_L ≈ g+ε  （g 
 | **T6** 跨总体 | — | ISSP T6；GSS85↔04；NSHAP↔UCNets；GSS24 | ✅ | ✅ |
 | **Decoding** | — | GSS85 同性别/闭合；UCNets size | —（仅 llama HF） | ✅ |
 
-**脚本：** State `T1_association/scripts/evaluate_state_eval{1,2,3}.py`；Network `T1_association/scripts/evaluate_network.py`；T4 `T4_individual_resample/scripts/evaluate_t4.py`；T6 `T6_cross_population/scripts/evaluate_t6.py`。批量入口：`Testing/common/run_model_evaluation.sh`。
+**脚本：** State `T1_association/scripts/evaluate_state_eval{1,2,3}.py`；Network `T1_association/scripts/evaluate_network.py`；T4 `T4_individual_resample/scripts/evaluate_t4.py`；T6 `T6_cross_population/scripts/evaluate_t6.py`；Decoding `Testing/decoding/scripts/`。批量入口：`Testing/common/run_model_evaluation.sh`。
 
 ### 3.2 T3 靶量
 
