@@ -1,0 +1,770 @@
+{
+  "rule": "three evenly spaced rows: first, middle, last",
+  "inputs": [
+    {
+      "dest": "data/samples/T1_association/gss_1985/s0.jsonl",
+      "source": "Testing/T1_association/gss_1985/input/s0_input.jsonl",
+      "n_source": 1524,
+      "indices": [
+        0,
+        762,
+        1523
+      ],
+      "respondent_ids": [
+        "1",
+        "771",
+        "1534"
+      ],
+      "task": "s0_baseline_state",
+      "dataset": "gss_1985"
+    },
+    {
+      "dest": "data/samples/T1_association/gss_1987/s0.jsonl",
+      "source": "Testing/T1_association/gss_1987/input/s0_input.jsonl",
+      "n_source": 1787,
+      "indices": [
+        0,
+        893,
+        1786
+      ],
+      "respondent_ids": [
+        "1",
+        "911",
+        "2353"
+      ],
+      "task": "s0_baseline_state",
+      "dataset": "gss_1987"
+    },
+    {
+      "dest": "data/samples/T1_association/gss_1987/s0b.jsonl",
+      "source": "Testing/T1_association/gss_1987/input/s0b_input.jsonl",
+      "n_source": 1787,
+      "indices": [
+        0,
+        893,
+        1786
+      ],
+      "respondent_ids": [
+        "1",
+        "911",
+        "2353"
+      ],
+      "task": "s0b_anti_typology",
+      "dataset": "gss_1987"
+    },
+    {
+      "dest": "data/samples/T1_association/gss_2010_network/s0.jsonl",
+      "source": "Testing/T1_association/gss_2010_network/input/s0_input.jsonl",
+      "n_source": 1251,
+      "indices": [
+        0,
+        625,
+        1250
+      ],
+      "respondent_ids": [
+        "6001",
+        "6643",
+        "7276"
+      ],
+      "task": "s0_baseline_state",
+      "dataset": "gss_2010_network"
+    },
+    {
+      "dest": "data/samples/T1_association/gss_2010_network/s0b.jsonl",
+      "source": "Testing/T1_association/gss_2010_network/input/s0b_input.jsonl",
+      "n_source": 1251,
+      "indices": [
+        0,
+        625,
+        1250
+      ],
+      "respondent_ids": [
+        "6001",
+        "6643",
+        "7276"
+      ],
+      "task": "s0b_anti_typology",
+      "dataset": "gss_2010_network"
+    },
+    {
+      "dest": "data/samples/T1_association/nshap_r1/s0.jsonl",
+      "source": "Testing/T1_association/nshap_r1/input/s0_input.jsonl",
+      "n_source": 2327,
+      "indices": [
+        0,
+        1163,
+        2326
+      ],
+      "respondent_ids": [
+        "nshap_r1_100005",
+        "nshap_r1_148885",
+        "nshap_r1_199996"
+      ],
+      "task": "s0_baseline_state",
+      "dataset": "nshap_r1"
+    },
+    {
+      "dest": "data/samples/T1_association/ucnets_w1/n0.jsonl",
+      "source": "Testing/T1_association/ucnets_w1/input/n0_input.jsonl",
+      "n_source": 1156,
+      "indices": [
+        0,
+        578,
+        1155
+      ],
+      "respondent_ids": [
+        "3000000000036",
+        "7200000004477",
+        "8000000000998"
+      ],
+      "task": "n0_baseline_network",
+      "dataset": "ucnets_w1"
+    },
+    {
+      "dest": "data/samples/T1_association/ucnets_w1/s0.jsonl",
+      "source": "Testing/T1_association/ucnets_w1/input/s0_input.jsonl",
+      "n_source": 1121,
+      "indices": [
+        0,
+        560,
+        1120
+      ],
+      "respondent_ids": [
+        "3000000000036",
+        "7200000005224",
+        "8000000000998"
+      ],
+      "task": "s0_baseline_state",
+      "dataset": "ucnets_w1"
+    },
+    {
+      "dest": "data/samples/T1_association/ucnets_w1/s0b.jsonl",
+      "source": "Testing/T1_association/ucnets_w1/input/s0b_input.jsonl",
+      "n_source": 1121,
+      "indices": [
+        0,
+        560,
+        1120
+      ],
+      "respondent_ids": [
+        "3000000000036",
+        "7200000005224",
+        "8000000000998"
+      ],
+      "task": "s0b_anti_typology",
+      "dataset": "ucnets_w1"
+    },
+    {
+      "dest": "data/samples/T2_information_use/gss_1987/s1.jsonl",
+      "source": "Testing/T2_information_use/gss_1987/input/s1_input.jsonl",
+      "n_source": 1785,
+      "indices": [
+        0,
+        892,
+        1784
+      ],
+      "respondent_ids": [
+        "1",
+        "911",
+        "2353"
+      ],
+      "task": "s1_health_conditioned",
+      "dataset": "gss_1987"
+    },
+    {
+      "dest": "data/samples/T2_information_use/gss_1987/s1b.jsonl",
+      "source": "Testing/T2_information_use/gss_1987/input/s1b_input.jsonl",
+      "n_source": 1785,
+      "indices": [
+        0,
+        892,
+        1784
+      ],
+      "respondent_ids": [
+        "1",
+        "911",
+        "2353"
+      ],
+      "task": "s1b_anti_typology",
+      "dataset": "gss_1987"
+    },
+    {
+      "dest": "data/samples/T2_information_use/gss_1987/s2.jsonl",
+      "source": "Testing/T2_information_use/gss_1987/input/s2_input.jsonl",
+      "n_source": 1738,
+      "indices": [
+        0,
+        868,
+        1737
+      ],
+      "respondent_ids": [
+        "1",
+        "907",
+        "2353"
+      ],
+      "task": "s2_politics_religion_conditioned",
+      "dataset": "gss_1987"
+    },
+    {
+      "dest": "data/samples/T2_information_use/gss_2010_network/s1.jsonl",
+      "source": "Testing/T2_information_use/gss_2010_network/input/s1_input.jsonl",
+      "n_source": 853,
+      "indices": [
+        0,
+        426,
+        852
+      ],
+      "respondent_ids": [
+        "6001",
+        "6642",
+        "7274"
+      ],
+      "task": "s1_health_conditioned",
+      "dataset": "gss_2010_network"
+    },
+    {
+      "dest": "data/samples/T2_information_use/gss_2010_network/s1b.jsonl",
+      "source": "Testing/T2_information_use/gss_2010_network/input/s1b_input.jsonl",
+      "n_source": 853,
+      "indices": [
+        0,
+        426,
+        852
+      ],
+      "respondent_ids": [
+        "6001",
+        "6642",
+        "7274"
+      ],
+      "task": "s1b_anti_typology",
+      "dataset": "gss_2010_network"
+    },
+    {
+      "dest": "data/samples/T2_information_use/gss_2010_network/s2.jsonl",
+      "source": "Testing/T2_information_use/gss_2010_network/input/s2_input.jsonl",
+      "n_source": 1225,
+      "indices": [
+        0,
+        612,
+        1224
+      ],
+      "respondent_ids": [
+        "6001",
+        "6646",
+        "7276"
+      ],
+      "task": "s2_politics_religion_conditioned",
+      "dataset": "gss_2010_network"
+    },
+    {
+      "dest": "data/samples/T2_information_use/ucnets_w1/n1.jsonl",
+      "source": "Testing/T2_information_use/ucnets_w1/input/n1_input.jsonl",
+      "n_source": 1156,
+      "indices": [
+        0,
+        578,
+        1155
+      ],
+      "respondent_ids": [
+        "3000000000036",
+        "7200000004477",
+        "8000000000998"
+      ],
+      "task": "n1_size_bucket",
+      "dataset": "ucnets_w1"
+    },
+    {
+      "dest": "data/samples/T2_information_use/ucnets_w1/n2.jsonl",
+      "source": "Testing/T2_information_use/ucnets_w1/input/n2_input.jsonl",
+      "n_source": 1156,
+      "indices": [
+        0,
+        578,
+        1155
+      ],
+      "respondent_ids": [
+        "3000000000036",
+        "7200000004477",
+        "8000000000998"
+      ],
+      "task": "n2_population_prior",
+      "dataset": "ucnets_w1"
+    },
+    {
+      "dest": "data/samples/T2_information_use/ucnets_w1/s1.jsonl",
+      "source": "Testing/T2_information_use/ucnets_w1/input/s1_input.jsonl",
+      "n_source": 1120,
+      "indices": [
+        0,
+        560,
+        1119
+      ],
+      "respondent_ids": [
+        "3000000000036",
+        "7200000005401",
+        "8000000000998"
+      ],
+      "task": "s1_health_conditioned",
+      "dataset": "ucnets_w1"
+    },
+    {
+      "dest": "data/samples/T2_information_use/ucnets_w1/s1b.jsonl",
+      "source": "Testing/T2_information_use/ucnets_w1/input/s1b_input.jsonl",
+      "n_source": 1120,
+      "indices": [
+        0,
+        560,
+        1119
+      ],
+      "respondent_ids": [
+        "3000000000036",
+        "7200000005401",
+        "8000000000998"
+      ],
+      "task": "s1b_anti_typology",
+      "dataset": "ucnets_w1"
+    },
+    {
+      "dest": "data/samples/T2_information_use/ucnets_w1/s2.jsonl",
+      "source": "Testing/T2_information_use/ucnets_w1/input/s2_input.jsonl",
+      "n_source": 631,
+      "indices": [
+        0,
+        315,
+        630
+      ],
+      "respondent_ids": [
+        "3000000000036",
+        "7200000006708",
+        "8000000000992"
+      ],
+      "task": "s2_politics_religion_conditioned",
+      "dataset": "ucnets_w1"
+    },
+    {
+      "dest": "data/samples/T3_interval_following/gss_1985/n0.jsonl",
+      "source": "Testing/T3_interval_following/gss_1985/input/n0_input.jsonl",
+      "n_source": 1393,
+      "indices": [
+        0,
+        696,
+        1392
+      ],
+      "respondent_ids": [
+        "1",
+        "766",
+        "1534"
+      ],
+      "task": "n0_baseline_network",
+      "dataset": "gss_1985"
+    },
+    {
+      "dest": "data/samples/T3_interval_following/gss_1985/n4c.jsonl",
+      "source": "Testing/T3_interval_following/gss_1985/input/n4c_input.jsonl",
+      "n_source": 927,
+      "indices": [
+        0,
+        463,
+        926
+      ],
+      "respondent_ids": [
+        "1",
+        "772",
+        "1534"
+      ],
+      "task": "n4c_closure",
+      "dataset": "gss_1985"
+    },
+    {
+      "dest": "data/samples/T3_interval_following/gss_1985/n4s.jsonl",
+      "source": "Testing/T3_interval_following/gss_1985/input/n4s_input.jsonl",
+      "n_source": 1392,
+      "indices": [
+        0,
+        696,
+        1391
+      ],
+      "respondent_ids": [
+        "1",
+        "767",
+        "1534"
+      ],
+      "task": "n4s_sex_homophily",
+      "dataset": "gss_1985"
+    },
+    {
+      "dest": "data/samples/T3_interval_following/gss_2004/n0.jsonl",
+      "source": "Testing/T3_interval_following/gss_2004/input/n0_input.jsonl",
+      "n_source": 1069,
+      "indices": [
+        0,
+        534,
+        1068
+      ],
+      "respondent_ids": [
+        "3",
+        "1388",
+        "2810"
+      ],
+      "task": "n0_baseline_network",
+      "dataset": "gss_2004"
+    },
+    {
+      "dest": "data/samples/T3_interval_following/gss_2004/n4c.jsonl",
+      "source": "Testing/T3_interval_following/gss_2004/input/n4c_input.jsonl",
+      "n_source": 525,
+      "indices": [
+        0,
+        262,
+        524
+      ],
+      "respondent_ids": [
+        "3",
+        "1390",
+        "2810"
+      ],
+      "task": "n4c_closure",
+      "dataset": "gss_2004"
+    },
+    {
+      "dest": "data/samples/T3_interval_following/gss_2004/n4s.jsonl",
+      "source": "Testing/T3_interval_following/gss_2004/input/n4s_input.jsonl",
+      "n_source": 1064,
+      "indices": [
+        0,
+        532,
+        1063
+      ],
+      "respondent_ids": [
+        "3",
+        "1387",
+        "2810"
+      ],
+      "task": "n4s_sex_homophily",
+      "dataset": "gss_2004"
+    },
+    {
+      "dest": "data/samples/T3_interval_following/gss_2024/n0.jsonl",
+      "source": "Testing/T3_interval_following/gss_2024/input/n0_input.jsonl",
+      "n_source": 964,
+      "indices": [
+        0,
+        482,
+        963
+      ],
+      "respondent_ids": [
+        "3",
+        "1613",
+        "3308"
+      ],
+      "task": "n0_baseline_network",
+      "dataset": "gss_2024"
+    },
+    {
+      "dest": "data/samples/T3_interval_following/gss_2024/n4.jsonl",
+      "source": "Testing/T3_interval_following/gss_2024/input/n4_input.jsonl",
+      "n_source": 960,
+      "indices": [
+        0,
+        480,
+        959
+      ],
+      "respondent_ids": [
+        "3",
+        "1613",
+        "3308"
+      ],
+      "task": "n4_contact",
+      "dataset": "gss_2024"
+    },
+    {
+      "dest": "data/samples/T3_interval_following/nshap_r1/n0.jsonl",
+      "source": "Testing/T3_interval_following/nshap_r1/input/n0_input.jsonl",
+      "n_source": 1000,
+      "indices": [
+        0,
+        500,
+        999
+      ],
+      "respondent_ids": [
+        "nshap_r1_100597",
+        "nshap_r1_152630",
+        "nshap_r1_199996"
+      ],
+      "task": "n0_baseline_network",
+      "dataset": "nshap_r1"
+    },
+    {
+      "dest": "data/samples/T3_interval_following/nshap_r1/n4c.jsonl",
+      "source": "Testing/T3_interval_following/nshap_r1/input/n4c_input.jsonl",
+      "n_source": 890,
+      "indices": [
+        0,
+        444,
+        889
+      ],
+      "respondent_ids": [
+        "nshap_r1_100597",
+        "nshap_r1_153415",
+        "nshap_r1_199996"
+      ],
+      "task": "n4c_closure",
+      "dataset": "nshap_r1"
+    },
+    {
+      "dest": "data/samples/T3_interval_following/signos/n0.jsonl",
+      "source": "Testing/T3_interval_following/signos/input/n0_input.jsonl",
+      "n_source": 70,
+      "indices": [
+        0,
+        34,
+        69
+      ],
+      "respondent_ids": [
+        "chinese0",
+        "filipinos20",
+        "sikhs9"
+      ],
+      "task": "n0_baseline_network",
+      "dataset": "signos"
+    },
+    {
+      "dest": "data/samples/T3_interval_following/signos/n4o.jsonl",
+      "source": "Testing/T3_interval_following/signos/input/n4o_input.jsonl",
+      "n_source": 70,
+      "indices": [
+        0,
+        34,
+        69
+      ],
+      "respondent_ids": [
+        "chinese0",
+        "filipinos20",
+        "sikhs9"
+      ],
+      "task": "n4o_same_origin",
+      "dataset": "signos"
+    },
+    {
+      "dest": "data/samples/T3_interval_following/signos/n4r.jsonl",
+      "source": "Testing/T3_interval_following/signos/input/n4r_input.jsonl",
+      "n_source": 70,
+      "indices": [
+        0,
+        34,
+        69
+      ],
+      "respondent_ids": [
+        "chinese0",
+        "filipinos20",
+        "sikhs9"
+      ],
+      "task": "n4r_resides_spain",
+      "dataset": "signos"
+    },
+    {
+      "dest": "data/samples/T3_interval_following/ucnets_w1/n4.jsonl",
+      "source": "Testing/T3_interval_following/ucnets_w1/input/n4_input.jsonl",
+      "n_source": 1156,
+      "indices": [
+        0,
+        578,
+        1155
+      ],
+      "respondent_ids": [
+        "3000000000036",
+        "7200000004477",
+        "8000000000998"
+      ],
+      "task": "n4_homophily",
+      "dataset": "ucnets_w1"
+    },
+    {
+      "dest": "data/samples/T4_individual_resample/gss_1985/r1.jsonl",
+      "source": "Testing/T4_individual_resample/gss_1985/input/r1_input.jsonl",
+      "n_source": 1392,
+      "indices": [
+        0,
+        696,
+        1391
+      ],
+      "respondent_ids": [
+        "1",
+        "313",
+        "999"
+      ],
+      "task": "r1_llm_state_network",
+      "dataset": "gss_1985"
+    },
+    {
+      "dest": "data/samples/T4_individual_resample/nshap_r1/r1.jsonl",
+      "source": "Testing/T4_individual_resample/nshap_r1/input/r1_input.jsonl",
+      "n_source": 2295,
+      "indices": [
+        0,
+        1147,
+        2294
+      ],
+      "respondent_ids": [
+        "nshap_r1_100005",
+        "nshap_r1_149035",
+        "nshap_r1_199996"
+      ],
+      "task": "r1_llm_state_network",
+      "dataset": "nshap_r1"
+    },
+    {
+      "dest": "data/samples/T4_individual_resample/ucnets_w1/r1.jsonl",
+      "source": "Testing/T4_individual_resample/ucnets_w1/input/r1_input.jsonl",
+      "n_source": 1107,
+      "indices": [
+        0,
+        553,
+        1106
+      ],
+      "respondent_ids": [
+        "3000000000036",
+        "7200000005518",
+        "8000000000998"
+      ],
+      "task": "r1_llm_state_network",
+      "dataset": "ucnets_w1"
+    },
+    {
+      "dest": "data/samples/T5_additivity/ucnets_w1/n3.jsonl",
+      "source": "Testing/T5_additivity/ucnets_w1/input/n3_input.jsonl",
+      "n_source": 1156,
+      "indices": [
+        0,
+        578,
+        1155
+      ],
+      "respondent_ids": [
+        "3000000000036",
+        "7200000004477",
+        "8000000000998"
+      ],
+      "task": "n3_roster_multistep",
+      "dataset": "ucnets_w1"
+    },
+    {
+      "dest": "data/samples/T5_additivity/ucnets_w1/n5.jsonl",
+      "source": "Testing/T5_additivity/ucnets_w1/input/n5_input.jsonl",
+      "n_source": 400,
+      "indices": [
+        0,
+        200,
+        399
+      ],
+      "respondent_ids": [
+        "3000000000271",
+        "7200000005576",
+        "8000000000992"
+      ],
+      "task": "n5_size_multistep",
+      "dataset": "ucnets_w1"
+    },
+    {
+      "dest": "data/samples/T5_additivity/ucnets_w1/n6.jsonl",
+      "source": "Testing/T5_additivity/ucnets_w1/input/n6_input.jsonl",
+      "n_source": 400,
+      "indices": [
+        0,
+        200,
+        399
+      ],
+      "respondent_ids": [
+        "3000000000271",
+        "7200000005576",
+        "8000000000992"
+      ],
+      "task": "n6_prior_multistep",
+      "dataset": "ucnets_w1"
+    },
+    {
+      "dest": "data/samples/T6_cross_population/issp_2017/t6.jsonl",
+      "source": "Testing/T6_cross_population/issp_2017/input/t6_input.jsonl",
+      "n_source": 2400,
+      "indices": [
+        0,
+        1200,
+        2399
+      ],
+      "respondent_ids": [
+        "issp_2017_00024",
+        "issp_2017_22707",
+        "issp_2017_44474"
+      ],
+      "task": "t6_country_resources",
+      "dataset": "issp_2017"
+    }
+  ],
+  "state_gold": [
+    {
+      "dest": "data/samples/gold/gss_1985_s0.jsonl",
+      "source": "Survey/gss/cleaned/gss_1985_s0.jsonl",
+      "n": 3,
+      "missing": []
+    },
+    {
+      "dest": "data/samples/gold/gss_1987_s0.jsonl",
+      "source": "Survey/gss/cleaned/gss_1987_s0.jsonl",
+      "n": 3,
+      "missing": []
+    },
+    {
+      "dest": "data/samples/gold/gss_1987_s1.jsonl",
+      "source": "Survey/gss/cleaned/gss_1987_s1.jsonl",
+      "n": 3,
+      "missing": []
+    },
+    {
+      "dest": "data/samples/gold/gss_1987_s2.jsonl",
+      "source": "Survey/gss/cleaned/gss_1987_s2.jsonl",
+      "n": 3,
+      "missing": []
+    },
+    {
+      "dest": "data/samples/gold/gss_2010_network_s0.jsonl",
+      "source": "Survey/gss/cleaned/gss_2010_network_s0.jsonl",
+      "n": 3,
+      "missing": []
+    },
+    {
+      "dest": "data/samples/gold/gss_2010_network_s1.jsonl",
+      "source": "Survey/gss/cleaned/gss_2010_network_s1.jsonl",
+      "n": 3,
+      "missing": []
+    },
+    {
+      "dest": "data/samples/gold/gss_2010_network_s2.jsonl",
+      "source": "Survey/gss/cleaned/gss_2010_network_s2.jsonl",
+      "n": 3,
+      "missing": []
+    },
+    {
+      "dest": "data/samples/gold/nshap_r1_s0.jsonl",
+      "source": "Survey/nshap/cleaned/nshap_r1_s0.jsonl",
+      "n": 3,
+      "missing": []
+    },
+    {
+      "dest": "data/samples/gold/ucnets_w1_s0.jsonl",
+      "source": "Survey/ucnets/cleaned/ucnets_w1_s0.jsonl",
+      "n": 3,
+      "missing": []
+    },
+    {
+      "dest": "data/samples/gold/ucnets_w1_s1.jsonl",
+      "source": "Survey/ucnets/cleaned/ucnets_w1_s1.jsonl",
+      "n": 3,
+      "missing": []
+    },
+    {
+      "dest": "data/samples/gold/ucnets_w1_s2.jsonl",
+      "source": "Survey/ucnets/cleaned/ucnets_w1_s2.jsonl",
+      "n": 3,
+      "missing": []
+    }
+  ]
+}

@@ -18,4 +18,4 @@ Testing/
 
 Decoding 入口：`Testing/decoding/scripts/run_native_path.py`；见 [`decoding/README.md`](decoding/README.md)。
 
-本地完整实验还需 `Survey/` 数据与 `Testing/configs/`；本仓库仅公开脚本与论文说明。
+本地完整实验还需 `Survey/` 数据与 `Testing/configs/`。仓库里只放了每个实验臂的 3 条输入样本，见 [`data/samples/`](../data/samples/README.md)。
